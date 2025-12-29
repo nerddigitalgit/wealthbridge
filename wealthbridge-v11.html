@@ -1,0 +1,2496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WealthBridge Consulting | Raise Your Keep Rate</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================
+       CSS VARIABLES
+    ========================================== */
+    :root {
+      --navy: #1A2B4A;
+      --navy-light: #2A3D5C;
+      --navy-dark: #0F1A2E;
+      --gold: #C4A962;
+      --gold-light: #D4BE7A;
+      --gold-dark: #A89050;
+      --cream: #FAF8F5;
+      --cream-dark: #F0EDE8;
+      --slate: #4A5568;
+      --slate-light: #718096;
+      --white: #FFFFFF;
+      --green: #276749;
+      --muted: #9CA3AF;
+      
+      --font-display: 'Source Serif 4', Georgia, serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      
+      --section-padding: clamp(80px, 10vw, 120px);
+      --container-width: 1140px;
+      
+      --shadow-hard: 6px 6px 0 rgba(26, 43, 74, 0.25);
+      --shadow-hard-hover: 8px 8px 0 rgba(26, 43, 74, 0.3);
+      --shadow-soft: 0 20px 50px rgba(26, 43, 74, 0.08);
+    }
+
+    /* ==========================================
+       RESET & BASE
+    ========================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--navy);
+      background: var(--white);
+    }
+
+    img { 
+      max-width: 100%; 
+      height: auto; 
+      display: block; 
+      -webkit-user-drag: none;
+      user-drag: none;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul, ol { list-style: none; }
+
+    /* ==========================================
+       UTILITIES
+    ========================================== */
+    .container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container--wide {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: var(--section-padding) 0;
+      position: relative;
+    }
+
+    .section--cream { background: var(--cream); }
+    .section--navy { background: var(--navy); color: var(--white); }
+
+    /* Dotted line connector */
+    .dotted-connector {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .dotted-connector::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: repeating-linear-gradient(
+        to bottom,
+        var(--gold) 0,
+        var(--gold) 6px,
+        transparent 6px,
+        transparent 12px
+      );
+    }
+
+    /* ==========================================
+       TYPOGRAPHY
+    ========================================== */
+    h1, h2, h3 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      line-height: 1.15;
+    }
+
+    h1 { font-size: clamp(38px, 6vw, 64px); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(32px, 4.5vw, 48px); letter-spacing: -0.01em; }
+    h3 { font-size: clamp(22px, 2.5vw, 28px); }
+
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      font-size: clamp(17px, 2vw, 20px);
+      color: var(--slate);
+      max-width: 620px;
+      line-height: 1.7;
+    }
+
+    .section--navy .subtitle {
+      color: rgba(255,255,255,0.85);
+    }
+
+    /* ==========================================
+       BUTTONS
+    ========================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 28px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn--primary {
+      background: var(--navy);
+      color: var(--white);
+      box-shadow: var(--shadow-hard);
+    }
+
+    .btn--primary:hover {
+      background: var(--navy-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hard-hover);
+    }
+
+    .btn--secondary {
+      background: var(--gold);
+      color: var(--navy-dark);
+      box-shadow: 6px 6px 0 rgba(196, 169, 98, 0.4);
+    }
+
+    .btn--secondary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 8px 8px 0 rgba(196, 169, 98, 0.5);
+    }
+
+    .btn--outline {
+      background: transparent;
+      color: var(--navy);
+      border: 2px solid var(--navy);
+      box-shadow: var(--shadow-hard);
+    }
+
+    .btn--outline:hover {
+      background: var(--navy);
+      color: var(--white);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hard-hover);
+    }
+
+    /* Nav button - no shadow */
+    .nav__cta.btn--outline {
+      box-shadow: none;
+    }
+
+    .nav__cta.btn--outline:hover {
+      box-shadow: none;
+    }
+
+    .btn--outline-light {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.6);
+    }
+
+    .btn--outline-light:hover {
+      background: var(--white);
+      color: var(--navy);
+      border-color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .btn--ghost {
+      background: transparent;
+      color: var(--navy);
+      padding: 8px 0;
+      box-shadow: none;
+    }
+
+    .btn--ghost:hover { color: var(--gold-dark); }
+
+    .btn--ghost::after {
+      content: '→';
+      transition: transform 0.2s ease;
+    }
+
+    .btn--ghost:hover::after {
+      transform: translateX(4px);
+    }
+
+    .btn--large {
+      padding: 18px 36px;
+      font-size: 16px;
+    }
+
+    .link {
+      color: var(--gold);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+
+    .link:hover {
+      color: var(--gold-light);
+    }
+
+    /* ==========================================
+       NAVIGATION
+    ========================================== */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 20px 0;
+      transition: all 0.3s ease;
+    }
+
+    .nav.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 1px 0 rgba(26, 43, 74, 0.08);
+      padding: 14px 0;
+    }
+
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav__logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--navy);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav__logo-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--gold);
+    }
+
+    .nav__logo-text {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav__link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--navy);
+      transition: color 0.2s;
+    }
+
+    .nav__link:hover { color: var(--gold-dark); }
+
+    .nav__cta {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .nav__links { display: none; }
+      .nav__cta { padding: 8px 16px; font-size: 13px; }
+      .nav__logo-text { font-size: 18px; }
+    }
+
+    @media (max-width: 480px) {
+      .nav { padding: 12px 0; }
+      .nav__cta { padding: 8px 12px; font-size: 12px; }
+      .nav__logo-text { font-size: 16px; }
+      .nav__logo-icon { width: 32px; height: 32px; }
+    }
+
+    /* ==========================================
+       HERO
+    ========================================== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 120px;
+      padding-bottom: 80px;
+      background: var(--cream);
+      position: relative;
+    }
+
+    .hero__content {
+      max-width: 750px;
+    }
+
+    .hero__eyebrow {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold-dark);
+      margin-bottom: 20px;
+    }
+
+    .hero__title {
+      margin-bottom: 24px;
+      color: var(--navy);
+    }
+
+    .hero__subtitle {
+      font-size: clamp(18px, 2.2vw, 21px);
+      color: var(--slate);
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+
+    .hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding-top: 100px; min-height: auto; padding-bottom: 60px; }
+      .hero__cta { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ==========================================
+       SOCIAL PROOF / QUICK RESULTS
+    ========================================== */
+    .quickproof {
+      background: var(--white);
+      border-top: 1px solid var(--cream-dark);
+      border-bottom: 1px solid var(--cream-dark);
+    }
+
+    .quickproof__header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .quickproof__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 900px) {
+      .quickproof__grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+
+    .quickproof__card {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 28px;
+      background: var(--cream);
+      border-radius: 8px;
+      box-shadow: var(--shadow-hard);
+      transition: all 0.3s ease;
+    }
+
+    .quickproof__card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hard-hover);
+    }
+
+    .quickproof__avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--slate-light);
+      flex-shrink: 0;
+      overflow: hidden;
+      border: 3px solid var(--gold);
+    }
+
+    .quickproof__avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .quickproof__content {
+      flex: 1;
+    }
+
+    .quickproof__headline {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .quickproof__meta {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--slate-light);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 10px;
+    }
+
+    .quickproof__text {
+      font-size: 14px;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+
+    /* ==========================================
+       THE PROBLEM SECTION
+    ========================================== */
+    .problem {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .problem__header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .problem__header .eyebrow {
+      color: var(--gold);
+    }
+
+    .problem__definition {
+      max-width: 800px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .problem__definition-term {
+      font-family: var(--font-display);
+      font-size: inherit;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .problem__definition-text {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.7;
+    }
+
+    /* Comparison Grid inside Problem */
+    .problem__comparison {
+      max-width: 960px;
+      margin: 0 auto 40px;
+    }
+
+    .problem__comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-hard);
+    }
+
+    @media (max-width: 800px) {
+      .problem__comparison-grid { grid-template-columns: 1fr; }
+    }
+
+    .problem__column {
+      padding: 40px 36px;
+    }
+
+    .problem__column--left {
+      background: var(--slate);
+      color: var(--white);
+    }
+
+    .problem__column--right {
+      background: var(--navy-light);
+      color: var(--white);
+    }
+
+    .problem__column-title {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .problem__column--left .problem__column-title {
+      color: var(--white);
+    }
+
+    .problem__column--right .problem__column-title {
+      color: var(--gold);
+    }
+
+    .problem__column-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .problem__column--left .problem__column-badge {
+      background: rgba(156, 163, 175, 0.25);
+      color: var(--muted);
+    }
+
+    .problem__column--right .problem__column-badge {
+      background: rgba(196, 169, 98, 0.25);
+      color: var(--gold);
+    }
+
+    .problem__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .problem__item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .problem__item-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 10px;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .problem__column--left .problem__item-icon {
+      background: rgba(156, 163, 175, 0.2);
+      color: var(--muted);
+    }
+
+    .problem__column--right .problem__item-icon {
+      background: rgba(196, 169, 98, 0.25);
+      color: var(--gold);
+    }
+
+    .problem__item-text {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .problem__item-text strong {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    .problem__column--right .problem__item-text strong {
+      color: var(--gold);
+    }
+
+    .problem__cta {
+      text-align: center;
+    }
+
+    /* ==========================================
+       SOLUTION (The First Step)
+    ========================================== */
+    .solution__header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .solution__lead {
+      max-width: 700px;
+      margin: 24px auto 0;
+      font-size: 18px;
+      color: var(--slate);
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .solution__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .solution-card {
+      background: var(--cream);
+      border-radius: 8px;
+      padding: 32px 28px;
+      position: relative;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .solution-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hard);
+      border-color: var(--gold);
+    }
+
+    .solution-card__step {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--navy);
+      color: var(--gold);
+      border-radius: 50%;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .solution-card__title {
+      font-family: var(--font-body);
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+
+    .solution-card__text {
+      font-size: 14px;
+      color: var(--slate);
+      line-height: 1.65;
+    }
+
+    .solution__cta {
+      text-align: center;
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    /* ==========================================
+       CAROUSEL RESULTS
+    ========================================== */
+    .results-carousel {
+      background: var(--cream);
+      overflow: hidden;
+    }
+
+    .results-carousel__header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .results-carousel__wrapper {
+      position: relative;
+    }
+
+    /* Gradient overlays */
+    .results-carousel__wrapper::before,
+    .results-carousel__wrapper::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 120px;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .results-carousel__wrapper::before {
+      left: 0;
+      background: linear-gradient(to right, var(--cream) 0%, transparent 100%);
+    }
+
+    .results-carousel__wrapper::after {
+      right: 0;
+      background: linear-gradient(to left, var(--cream) 0%, transparent 100%);
+    }
+
+    .results-carousel__row {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding: 10px 60px;
+      cursor: grab;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    @media (max-width: 768px) {
+      .results-carousel__row {
+        padding: 10px calc((100vw - 340px) / 2);
+        gap: 16px;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .results-carousel__row {
+        padding: 10px calc((100vw - 320px) / 2);
+        gap: 16px;
+      }
+    }
+
+    .results-carousel__row::-webkit-scrollbar {
+      display: none;
+    }
+
+    .results-carousel__row:active {
+      cursor: grabbing;
+    }
+
+    .results-carousel__row + .results-carousel__row {
+      margin-top: 24px;
+    }
+
+    .results-card {
+      flex: 0 0 420px;
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      background: var(--white);
+      border-radius: 8px;
+      border: 1px solid rgba(26, 43, 74, 0.1);
+      transition: transform 0.3s ease;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      cursor: grab;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .results-card {
+        flex: 0 0 340px;
+      }
+    }
+
+    .results-card:active {
+      cursor: grabbing;
+    }
+
+    .results-card:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .results-card {
+        flex: 0 0 320px;
+      }
+    }
+
+    .results-card__avatar {
+      width: 130px;
+      min-height: 100%;
+      background: var(--slate-light);
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    @media (max-width: 600px) {
+      .results-card__avatar {
+        width: 100px;
+      }
+    }
+
+    .results-card__avatar img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .results-card__content {
+      flex: 1;
+      padding: 24px;
+    }
+
+    @media (max-width: 600px) {
+      .results-card__content {
+        padding: 16px;
+      }
+    }
+
+    .results-card__type {
+      display: inline-block;
+      padding: 4px 10px;
+      background: rgba(196, 169, 98, 0.15);
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--gold-dark);
+      margin-bottom: 10px;
+    }
+
+    .results-card__headline {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--green);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .results-card__text {
+      font-size: 13px;
+      color: var(--slate);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .results-card__metrics {
+      display: flex;
+      gap: 20px;
+      padding-top: 12px;
+      border-top: 2px dotted var(--cream-dark);
+    }
+
+    .results-card__metric {
+      text-align: left;
+    }
+
+    .results-card__metric-label {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--slate-light);
+      margin-bottom: 2px;
+    }
+
+    .results-card__metric-value {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .results-card__metric--before .results-card__metric-value {
+      color: var(--muted);
+      text-decoration: line-through;
+    }
+
+    .results-card__metric--after .results-card__metric-value {
+      color: var(--gold-dark);
+    }
+
+    .results-carousel__cta {
+      text-align: center;
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    /* ==========================================
+       HOW IT WORKS
+    ========================================== */
+    .process {
+      background: var(--navy-dark);
+      color: var(--white);
+    }
+
+    .process__header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .process__header .eyebrow {
+      color: var(--gold);
+    }
+
+    .process__layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .process__layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+
+    .process__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .process-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 28px 32px;
+      color: var(--navy);
+      box-shadow: var(--shadow-hard);
+      transition: all 0.3s ease;
+    }
+
+    .process-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hard-hover);
+    }
+
+    .process-card__title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .process-card__text {
+      font-size: 14px;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+
+    /* Concentric circles */
+    .process__circles {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .circles-wrapper {
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    @media (max-width: 500px) {
+      .circles-wrapper {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      border: 2px dashed rgba(196, 169, 98, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .circle--outer {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .circle--middle {
+      width: 70%;
+      height: 70%;
+      top: 15%;
+      left: 15%;
+    }
+
+    .circle--inner {
+      width: 40%;
+      height: 40%;
+      top: 30%;
+      left: 30%;
+      background: rgba(196, 169, 98, 0.1);
+    }
+
+    .circle__label {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--gold);
+      text-align: center;
+    }
+
+    .circle__sublabel {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.6);
+      text-align: center;
+      margin-top: 4px;
+    }
+
+    .circle--outer .circle__label,
+    .circle--outer .circle__sublabel {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+    }
+
+    .circle--outer .circle__sublabel {
+      top: 52px;
+    }
+
+    .circle--middle .circle__label,
+    .circle--middle .circle__sublabel {
+      position: absolute;
+      top: 30px;
+    }
+
+    .circle--middle .circle__sublabel {
+      top: 52px;
+    }
+
+    @media (max-width: 500px) {
+      .circle__label { font-size: 14px; }
+      .circle__sublabel { font-size: 10px; }
+    }
+
+    .process__cta {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .process__cta-text {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 16px;
+    }
+
+    .process__cta-link {
+      display: block;
+      margin-top: 16px;
+    }
+
+    /* ==========================================
+       FOUNDER LETTER
+    ========================================== */
+    .founder {
+      background: var(--cream);
+    }
+
+    .founder__card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 48px 44px;
+      max-width: 680px;
+      margin: 0 auto;
+      box-shadow: var(--shadow-hard);
+    }
+
+    .founder__logo-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .founder__logo-line {
+      flex: 1;
+      height: 2px;
+      background: repeating-linear-gradient(
+        to right,
+        var(--cream-dark) 0,
+        var(--cream-dark) 6px,
+        transparent 6px,
+        transparent 12px
+      );
+    }
+
+    .founder__logo-circle {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .founder__logo-circle svg {
+      width: 32px;
+      height: 32px;
+      fill: var(--gold);
+    }
+
+    .founder__greeting {
+      font-size: 17px;
+      margin-bottom: 24px;
+      color: var(--navy);
+    }
+
+    .founder__story {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--slate);
+      margin-bottom: 20px;
+    }
+
+    .founder__signature-area {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 2px dotted var(--cream-dark);
+    }
+
+    .founder__signature-svg {
+      height: 44px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+
+    .founder__signature-details {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .founder__signature-photo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--cream);
+      border: 3px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .founder__signature-photo-placeholder {
+      font-size: 26px;
+    }
+
+    .founder__signature-name {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--navy);
+      margin-bottom: 2px;
+    }
+
+    .founder__signature-title {
+      font-size: 13px;
+      color: var(--slate);
+    }
+
+    @media (max-width: 700px) {
+      .founder__card { padding: 36px 28px; }
+    }
+
+    /* ==========================================
+       INTERESTED? SECTION
+    ========================================== */
+    .interested {
+      background: var(--navy-dark);
+      color: var(--white);
+    }
+
+    .interested__header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .interested__header h2 {
+      font-family: var(--font-display);
+      color: var(--gold);
+    }
+
+    .interested__box {
+      max-width: 700px;
+      margin: 0 auto;
+      border: 2px dashed rgba(196, 169, 98, 0.5);
+      border-radius: 8px;
+      padding: 40px 48px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    @media (max-width: 600px) {
+      .interested__box { padding: 32px 24px; }
+    }
+
+    .interested__box-title {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 28px;
+    }
+
+    .interested__list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+
+    .interested__item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .interested__item-bullet {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 8px;
+    }
+
+    .interested__item strong {
+      color: var(--white);
+    }
+
+    .interested__cta {
+      text-align: center;
+    }
+
+    /* ==========================================
+       FAQ
+    ========================================== */
+    .faq__header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .faq__list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 2px dotted var(--cream-dark);
+    }
+
+    .faq-item__question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 24px 0;
+      background: none;
+      border: none;
+      font-family: var(--font-body);
+      font-size: 17px;
+      font-weight: 600;
+      text-align: left;
+      color: var(--navy);
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .faq-item__question:hover { color: var(--gold-dark); }
+
+    .faq-item__icon {
+      font-size: 24px;
+      color: var(--gold);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-item__icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-item__answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+
+    .faq-item.active .faq-item__answer {
+      max-height: 500px;
+    }
+
+    .faq-item__answer-inner {
+      padding-bottom: 24px;
+      color: var(--slate);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ==========================================
+       CTA
+    ========================================== */
+    .cta {
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .cta__inner {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .cta__title {
+      margin-bottom: 20px;
+    }
+
+    .cta__subtitle {
+      margin: 0 auto 36px;
+    }
+
+    .cta__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .cta__note {
+      font-size: 14px;
+      color: var(--slate-light);
+    }
+
+    /* ==========================================
+       FOOTER
+    ========================================== */
+    .footer {
+      padding: 60px 0 40px;
+      background: var(--navy-dark);
+      color: var(--white);
+    }
+
+    .footer__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .footer__brand {
+      max-width: 300px;
+    }
+
+    .footer__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .footer__logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--gold);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer__logo-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--navy-dark);
+    }
+
+    .footer__logo-text {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .footer__tagline {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.6;
+    }
+
+    .footer__links {
+      display: flex;
+      gap: 60px;
+    }
+
+    .footer__column h4 {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+      color: var(--gold);
+    }
+
+    .footer__column ul {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer__column a {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      transition: color 0.2s;
+    }
+
+    .footer__column a:hover { color: var(--white); }
+
+    .footer__bottom {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer__copyright {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .footer__legal {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer__legal a {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.5);
+      transition: color 0.2s;
+    }
+
+    .footer__legal a:hover { color: var(--white); }
+
+    .footer__disclaimer {
+      margin-top: 24px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .footer__inner { flex-direction: column; }
+      .footer__links { flex-direction: column; gap: 32px; }
+      .footer__bottom { flex-direction: column; text-align: center; }
+    }
+
+    /* ==========================================
+       ANIMATIONS
+    ========================================== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate {
+      animation: fadeInUp 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    .animate-delay-1 { animation-delay: 0.1s; }
+    .animate-delay-2 { animation-delay: 0.2s; }
+    .animate-delay-3 { animation-delay: 0.3s; }
+    .animate-delay-4 { animation-delay: 0.4s; }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo">
+          <div class="nav__logo-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span class="nav__logo-text">WealthBridge</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="#solution" class="nav__link">Our Approach</a></li>
+          <li><a href="#results" class="nav__link">Results</a></li>
+          <li><a href="#process" class="nav__link">How It Works</a></li>
+          <li><a href="#faq" class="nav__link">FAQ</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="#cta" class="btn btn--outline nav__cta">Keep More Wealth</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <p class="hero__eyebrow animate">For Canadian Business Owners</p>
+        <h1 class="hero__title animate animate-delay-1">The wealthy don't just earn more. They keep more.</h1>
+        <p class="hero__subtitle animate animate-delay-2">Only 3% of Canadian business owners build enough wealth to retire and never have to trade time for money. The rest work harder, and longer, and still end up with less. The difference? Their Keep Rate.</p>
+        <div class="hero__cta animate animate-delay-3">
+          <a href="#cta" class="btn btn--primary btn--large">Get Your Free Keep Rate Audit</a>
+          <a href="#course" class="btn btn--outline btn--large">Take the Free Course</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK PROOF / CLIENT RESULTS (Before Problem) -->
+  <section class="quickproof section">
+    <div class="container">
+      <div class="quickproof__header">
+        <p class="eyebrow">Client Results</p>
+        <h2>Real outcomes. Real business owners.</h2>
+      </div>
+      <div class="quickproof__grid">
+        <div class="quickproof__card fade-in">
+          <div class="quickproof__avatar">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face" alt="Lawyer portrait">
+          </div>
+          <div class="quickproof__content">
+            <h3 class="quickproof__headline">$3.2M saved over career</h3>
+            <p class="quickproof__meta">Lawyer • 12 Years in Practice</p>
+            <p class="quickproof__text">Partner at a major firm. RBC wealth client. Nobody asked: "Why aren't you incorporated?" We did.</p>
+          </div>
+        </div>
+        <div class="quickproof__card fade-in">
+          <div class="quickproof__avatar">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face" alt="Business owner portrait">
+          </div>
+          <div class="quickproof__content">
+            <h3 class="quickproof__headline">$70K → $0 in taxes</h3>
+            <p class="quickproof__meta">Business Owner • $300K Revenue</p>
+            <p class="quickproof__text">She was paying $70,000 in taxes. Using insurance financing and proper structure, she now pays $0.</p>
+          </div>
+        </div>
+        <div class="quickproof__card fade-in">
+          <div class="quickproof__avatar">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Executive portrait">
+          </div>
+          <div class="quickproof__content">
+            <h3 class="quickproof__headline">$44M projected net worth</h3>
+            <p class="quickproof__meta">Executive • $1M+ Income</p>
+            <p class="quickproof__text">Making $1M/year with only $2.3M net worth. His pension wasn't invested. We fixed that.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE PROBLEM SECTION -->
+  <section class="problem section" id="problem">
+    <div class="container">
+      <div class="problem__header">
+        <p class="eyebrow">The Problem</p>
+        <h2>You have a low Keep Rate.</h2>
+      </div>
+      
+      <div class="problem__definition fade-in">
+        <p class="problem__definition-text"><strong class="problem__definition-term">Keep Rate:</strong> The percentage of your income you actually keep after taxes, interest, and wealth drains. It's the single number that determines whether you build generational wealth — or work your whole life with little to show for it.</p>
+      </div>
+      
+      <!-- Comparison Grid -->
+      <div class="problem__comparison fade-in">
+        <div class="problem__comparison-grid">
+          <div class="problem__column problem__column--left">
+            <h3 class="problem__column-title">Everyone Else</h3>
+            <span class="problem__column-badge">~50% Keep Rate</span>
+            <ul class="problem__list">
+              <li class="problem__item">
+                <span class="problem__item-icon">✗</span>
+                <span class="problem__item-text">Pay <strong>36-50% personal tax</strong> before you can invest</span>
+              </li>
+              <li class="problem__item">
+                <span class="problem__item-icon">✗</span>
+                <span class="problem__item-text">Wrong legal structure — taxed at personal rates</span>
+              </li>
+              <li class="problem__item">
+                <span class="problem__item-icon">✗</span>
+                <span class="problem__item-text">Corporate cash sits idle, taxed as passive income</span>
+              </li>
+              <li class="problem__item">
+                <span class="problem__item-icon">✗</span>
+                <span class="problem__item-text">Withdraw dividends, trigger <strong>tax events</strong></span>
+              </li>
+              <li class="problem__item">
+                <span class="problem__item-icon">✗</span>
+                <span class="problem__item-text">RRSP withdrawals taxed at <strong>36-50%</strong> in retirement</span>
+              </li>
+            </ul>
+          </div>
+          <div class="problem__column problem__column--right">
+            <h3 class="problem__column-title">The Ultra-Wealthy</h3>
+            <span class="problem__column-badge">85%+ Keep Rate</span>
+            <ul class="problem__list">
+              <li class="problem__item">
+                <span class="problem__item-icon">✓</span>
+                <span class="problem__item-text">Pay <strong>0-12% taxes</strong> using corporate structures</span>
+              </li>
+              <li class="problem__item">
+                <span class="problem__item-icon">✓</span>
+                <span class="problem__item-text">Structured for <strong>wealth building</strong>, not just operations</span>
+              </li>
+              <li class="problem__item">
+                <span class="problem__item-icon">✓</span>
+                <span class="problem__item-text">Retained earnings grow <strong>tax-free</strong> in insurance vehicles</span>
+              </li>
+              <li class="problem__item">
+                <span class="problem__item-icon">✓</span>
+                <span class="problem__item-text">Borrow against assets — pay <strong>5% interest</strong> instead of 50% tax</span>
+              </li>
+              <li class="problem__item">
+                <span class="problem__item-icon">✓</span>
+                <span class="problem__item-text"><strong>Tax-free</strong> retirement income streams</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="problem__cta">
+        <a href="#course" class="btn btn--secondary btn--large">Learn How to Fix It → Free Course</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOTTED CONNECTOR -->
+  <div class="dotted-connector" style="background: var(--navy);"></div>
+
+  <!-- SOLUTION (The First Step) -->
+  <section class="solution section" id="solution">
+    <div class="container">
+      <div class="solution__header">
+        <p class="eyebrow">The First Step to More Wealth</p>
+        <h2>Stop losing 50 cents on every dollar.</h2>
+        <p class="solution__lead">The ultra-wealthy don't start by earning more. They start by keeping more. Before you can grow wealth, you have to stop the drains that are bleeding it away.</p>
+      </div>
+      <div class="solution__grid">
+        <div class="solution-card fade-in">
+          <div class="solution-card__step">1</div>
+          <h3 class="solution-card__title">Find the Drains</h3>
+          <p class="solution-card__text">Audit where your money is actually going. Taxes, structure, cash flow, interest — identify every dollar leaving that doesn't have to.</p>
+        </div>
+        <div class="solution-card fade-in">
+          <div class="solution-card__step">2</div>
+          <h3 class="solution-card__title">Fix Your Structure</h3>
+          <p class="solution-card__text">Incorporation is layer one. But are you structured for wealth building or just day-to-day operations? Set up the right entities for where you're going.</p>
+        </div>
+        <div class="solution-card fade-in">
+          <div class="solution-card__step">3</div>
+          <h3 class="solution-card__title">Eliminate Unnecessary Tax</h3>
+          <p class="solution-card__text">Your biggest expense isn't your mortgage — it's your taxes. Use corporate-owned insurance, capital dividend accounts, and proper compensation to reduce tax by 30-40%.</p>
+        </div>
+        <div class="solution-card fade-in">
+          <div class="solution-card__step">4</div>
+          <h3 class="solution-card__title">Activate Retained Earnings</h3>
+          <p class="solution-card__text">Money sitting in your corporation should be working. Position it in tax-exempt vehicles that grow 5-6% annually — accessible without triggering income.</p>
+        </div>
+        <div class="solution-card fade-in">
+          <div class="solution-card__step">5</div>
+          <h3 class="solution-card__title">Create Liquidity Without Tax</h3>
+          <p class="solution-card__text">Need cash? Borrow against assets instead of withdrawing income. Pay 5% interest instead of 36-50% tax. The money keeps growing. You get access.</p>
+        </div>
+        <div class="solution-card fade-in">
+          <div class="solution-card__step">6</div>
+          <h3 class="solution-card__title">Design Tax-Free Retirement</h3>
+          <p class="solution-card__text">The goal: multiple streams of tax-free income in retirement. Design your exit strategy now so you keep what you earned — not half of it.</p>
+        </div>
+      </div>
+      <div class="solution__cta">
+        <a href="#cta" class="btn btn--primary btn--large">Get Your Free Keep Rate Audit</a>
+        <a href="#course" class="btn btn--outline btn--large">Take the Free Course</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOTTED CONNECTOR -->
+  <div class="dotted-connector"></div>
+
+  <!-- CAROUSEL RESULTS -->
+  <section class="results-carousel section" id="results">
+    <div class="container">
+      <div class="results-carousel__header">
+        <p class="eyebrow">Client Results</p>
+        <h2>What a higher Keep Rate looks like</h2>
+        <p class="subtitle" style="margin: 20px auto 0; text-align: center;">Real results from Canadian business owners. Swipe to see more.</p>
+      </div>
+    </div>
+    
+    <div class="results-carousel__wrapper">
+      <!-- Row 1 -->
+      <div class="results-carousel__row" id="carousel-row-1">
+        <div class="results-card">
+          <div class="results-card__avatar">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face" alt="Lawyer portrait">
+          </div>
+          <div class="results-card__content">
+            <span class="results-card__type">Lawyer • 12 Years</span>
+            <h3 class="results-card__headline">$3.2M saved over career</h3>
+            <p class="results-card__text">Partner at a major firm. RBC wealth client. Nobody asked: "Why aren't you incorporated?"</p>
+            <div class="results-card__metrics">
+              <div class="results-card__metric results-card__metric--before">
+                <p class="results-card__metric-label">Before</p>
+                <p class="results-card__metric-value">50% taxes</p>
+              </div>
+              <div class="results-card__metric results-card__metric--after">
+                <p class="results-card__metric-label">After</p>
+                <p class="results-card__metric-value">12% taxes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results-card">
+          <div class="results-card__avatar">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face" alt="Business owner portrait">
+          </div>
+          <div class="results-card__content">
+            <span class="results-card__type">Business Owner • $300K</span>
+            <h3 class="results-card__headline">$70K → $0 in taxes</h3>
+            <p class="results-card__text">Using insurance financing and proper structure, she now pays $0. Same lifestyle.</p>
+            <div class="results-card__metrics">
+              <div class="results-card__metric results-card__metric--before">
+                <p class="results-card__metric-label">Before</p>
+                <p class="results-card__metric-value">$70,000/yr</p>
+              </div>
+              <div class="results-card__metric results-card__metric--after">
+                <p class="results-card__metric-label">After</p>
+                <p class="results-card__metric-value">$0/yr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results-card">
+          <div class="results-card__avatar">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&crop=face" alt="Solopreneur portrait">
+          </div>
+          <div class="results-card__content">
+            <span class="results-card__type">Solopreneur • $150K</span>
+            <h3 class="results-card__headline">$40K saved year one</h3>
+            <p class="results-card__text">Making $150K but only needed $30K to live. Was paying 50% tax on the full amount.</p>
+            <div class="results-card__metrics">
+              <div class="results-card__metric results-card__metric--before">
+                <p class="results-card__metric-label">Before</p>
+                <p class="results-card__metric-value">Sole Prop</p>
+              </div>
+              <div class="results-card__metric results-card__metric--after">
+                <p class="results-card__metric-label">After</p>
+                <p class="results-card__metric-value">Inc'd</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results-card">
+          <div class="results-card__avatar">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" alt="Dentist portrait">
+          </div>
+          <div class="results-card__content">
+            <span class="results-card__type">Dentist • Practice Owner</span>
+            <h3 class="results-card__headline">$1.8M additional retirement</h3>
+            <p class="results-card__text">Thought his accountant had everything covered. We found $180K/yr in missed savings.</p>
+            <div class="results-card__metrics">
+              <div class="results-card__metric results-card__metric--before">
+                <p class="results-card__metric-label">Before</p>
+                <p class="results-card__metric-value">$4.2M</p>
+              </div>
+              <div class="results-card__metric results-card__metric--after">
+                <p class="results-card__metric-label">After</p>
+                <p class="results-card__metric-value">$6M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results-card">
+          <div class="results-card__avatar">
+            <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=200&h=200&fit=crop&crop=face" alt="Consultant portrait">
+          </div>
+          <div class="results-card__content">
+            <span class="results-card__type">Consultant • $250K</span>
+            <h3 class="results-card__headline">$55K saved annually</h3>
+            <p class="results-card__text">High income, no structure. Now keeps $55K more every year with proper planning.</p>
+            <div class="results-card__metrics">
+              <div class="results-card__metric results-card__metric--before">
+                <p class="results-card__metric-label">Before</p>
+                <p class="results-card__metric-value">45% rate</p>
+              </div>
+              <div class="results-card__metric results-card__metric--after">
+                <p class="results-card__metric-label">After</p>
+                <p class="results-card__metric-value">22% rate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Row 2 -->
+      <div class="results-carousel__row" id="carousel-row-2">
+        <div class="results-card">
+          <div class="results-card__avatar">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Executive portrait">
+          </div>
+          <div class="results-card__content">
+            <span class="results-card__type">Executive • $1M+ Income</span>
+            <h3 class="results-card__headline">$44M net worth projection</h3>
+            <p class="results-card__text">Making $1M/year with only $2.3M net worth. His pension wasn't invested.</p>
+            <div class="results-card__metrics">
+              <div class="results-card__metric results-card__metric--before">
+                <p class="results-card__metric-label">Current</p>
+                <p class="results-card__metric-value">$2.3M</p>
+              </div>
+              <div class="results-card__metric results-card__metric--after">
+                <p class="results-card__metric-label">Projected</p>
+                <p class="results-card__metric-value">$44M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results-card">
+          <div class="results-card__avatar">
+            <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=200&h=200&fit=crop&crop=face" alt="Real estate agent portrait">
+          </div>
+          <div class="results-card__content">
+            <span class="results-card__type">Realtor • $400K Revenue</span>
+            <h3 class="results-card__headline">$120K kept vs lost</h3>
+            <p class="results-card__text">From paying 50% on $120K to keeping it all. Same income, different result.</p>
+            <div class="results-card__metrics">
+              <div class="results-card__metric results-card__metric--before">
+                <p class="results-card__metric-label">Before</p>
+                <p class="results-card__metric-value">$60K kept</p>
+              </div>
+              <div class="results-card__metric results-card__metric--after">
+                <p class="results-card__metric-label">After</p>
+                <p class="results-card__metric-value">$120K kept</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results-card">
+          <div class="results-card__avatar">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop&crop=face" alt="Tech founder portrait">
+          </div>
+          <div class="results-card__content">
+            <span class="results-card__type">Tech Founder • $500K</span>
+            <h3 class="results-card__headline">$2.1M preserved on exit</h3>
+            <p class="results-card__text">Set up family trust before exit. Saved $2.1M in capital gains tax.</p>
+            <div class="results-card__metrics">
+              <div class="results-card__metric results-card__metric--before">
+                <p class="results-card__metric-label">Without</p>
+                <p class="results-card__metric-value">$5.9M</p>
+              </div>
+              <div class="results-card__metric results-card__metric--after">
+                <p class="results-card__metric-label">With</p>
+                <p class="results-card__metric-value">$8M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results-card">
+          <div class="results-card__avatar">
+            <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=200&h=200&fit=crop&crop=face" alt="Therapist portrait">
+          </div>
+          <div class="results-card__content">
+            <span class="results-card__type">Therapist • $180K</span>
+            <h3 class="results-card__headline">$32K saved year one</h3>
+            <p class="results-card__text">Professional corp + proper structure = $32K more in her pocket annually.</p>
+            <div class="results-card__metrics">
+              <div class="results-card__metric results-card__metric--before">
+                <p class="results-card__metric-label">Before</p>
+                <p class="results-card__metric-value">$90K kept</p>
+              </div>
+              <div class="results-card__metric results-card__metric--after">
+                <p class="results-card__metric-label">After</p>
+                <p class="results-card__metric-value">$122K kept</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results-card">
+          <div class="results-card__avatar">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face" alt="Contractor portrait">
+          </div>
+          <div class="results-card__content">
+            <span class="results-card__type">Contractor • $350K</span>
+            <h3 class="results-card__headline">$85K tax reduction</h3>
+            <p class="results-card__text">From writing cheques to CRA to keeping that money in his family.</p>
+            <div class="results-card__metrics">
+              <div class="results-card__metric results-card__metric--before">
+                <p class="results-card__metric-label">Before</p>
+                <p class="results-card__metric-value">$140K tax</p>
+              </div>
+              <div class="results-card__metric results-card__metric--after">
+                <p class="results-card__metric-label">After</p>
+                <p class="results-card__metric-value">$55K tax</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="results-carousel__cta">
+        <a href="#cta" class="btn btn--primary btn--large">Get Your Free Keep Rate Audit</a>
+        <a href="#course" class="btn btn--outline btn--large">Take the Free Course</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER LETTER -->
+  <section class="founder section" id="founder">
+    <div class="container">
+      <div class="founder__card fade-in">
+        <div class="founder__logo-header">
+          <div class="founder__logo-line"></div>
+          <div class="founder__logo-circle">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="founder__logo-line"></div>
+        </div>
+        
+        <p class="founder__greeting">Hey there,</p>
+        
+        <p class="founder__story">I left my government job to become a realtor. First year: $120K income. I paid 50% in taxes. Meanwhile, my boss — who made $1M that year — paid less in taxes than me. Same industry. Same market. Different structure.</p>
+        
+        <p class="founder__story">That didn't make sense. So I learned. Incorporation. Insurance financing. Capital dividend accounts. I took my tax bill from $70,000 to $0. And I realized: nobody was teaching this to people like me.</p>
+        
+        <p class="founder__story">I was too "small" for a wealth management firm. Too successful for a bank advisor. I fell into a gap — and I had to figure it all out myself. That's why I built WealthBridge.</p>
+        
+        <p class="founder__story">WealthBridge exists to bring "top 1%" wealth strategies to business owners who were never supposed to have access. Strategies that were quietly reserved for the ultra-wealthy. Strategies that are available to anyone with a corporation — they just don't know it yet.</p>
+        
+        <p class="founder__story">If any of this sounds familiar, I'd like to help. Our Keep Rate Audit is free. If we can't help you significantly, we'll tell you. But if we can, you'll see exactly where your wealth is draining — and how to plug it.</p>
+        
+        <div class="founder__signature-area">
+          <svg class="founder__signature-svg" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 45 Q 30 10, 50 40 T 90 35 Q 110 30, 130 38 T 170 30 Q 185 25, 195 35" 
+                  stroke="#1A2B4A" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+          
+          <div class="founder__signature-details">
+            <div class="founder__signature-photo">
+              <span class="founder__signature-photo-placeholder">👩‍💼</span>
+            </div>
+            <div>
+              <p class="founder__signature-name">Behi Shafiei</p>
+              <p class="founder__signature-title">Founder & CEO, WealthBridge Consulting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOTTED CONNECTOR -->
+  <div class="dotted-connector" style="background: var(--cream);"></div>
+
+  <!-- HOW IT WORKS -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="process__header">
+        <p class="eyebrow">What You Get With WealthBridge</p>
+        <h2 style="color: var(--white);">The wealth strategies banks hide behind $50M minimums. We're making them yours.</h2>
+      </div>
+      <div class="process__layout">
+        <div class="process__cards">
+          <div class="process-card">
+            <h3 class="process-card__title">Your Free Keep Rate Audit</h3>
+            <p class="process-card__text">A comprehensive analysis of where your money is going. We identify every drain — taxes, structure, cash flow, interest — and show you exactly how much you're losing annually.</p>
+          </div>
+          <div class="process-card">
+            <h3 class="process-card__title">Your Plan to Keep More Wealth</h3>
+            <p class="process-card__text">A personalized strategy to fix the drains first. Corporate structure, tax optimization, insurance financing — every lever available to stop losing 50 cents on every dollar.</p>
+          </div>
+          <div class="process-card">
+            <h3 class="process-card__title">Your Plan to Grow More Wealth</h3>
+            <p class="process-card__text">Once you're keeping more, we put it to work. Investment strategies, compound growth vehicles, and tax-free growth mechanisms that accelerate your path to financial freedom.</p>
+          </div>
+          <div class="process-card">
+            <h3 class="process-card__title">Your Team to Manage It All — For Life</h3>
+            <p class="process-card__text">Accountants, lawyers, insurance advisors, investment managers — all coordinated under one roof. Succession planning, your children's education, charitable giving, estate planning. One point of contact. We handle everything.</p>
+          </div>
+        </div>
+        <div class="process__circles">
+          <div class="circles-wrapper">
+            <div class="circle circle--outer">
+              <span class="circle__label">Full Network</span>
+              <span class="circle__sublabel">Lawyers. Accountants. Specialists.</span>
+            </div>
+            <div class="circle circle--middle">
+              <span class="circle__label">Your Wealth Plan</span>
+              <span class="circle__sublabel">Tax. Insurance. Investments.</span>
+            </div>
+            <div class="circle circle--inner">
+              <span class="circle__label">You</span>
+              <span class="circle__sublabel">One Point of Contact</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="process__cta">
+        <p class="process__cta-text">Want to learn more?</p>
+        <a href="#cta" class="btn btn--secondary btn--large">Get Your Free Keep Rate Audit</a>
+        <a href="#course" class="link process__cta-link">Or take the free 5-day email course →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTED? SECTION -->
+  <section class="interested section" id="interested">
+    <div class="container">
+      <div class="interested__header">
+        <h2>Interested?</h2>
+      </div>
+      <div class="interested__box fade-in">
+        <h3 class="interested__box-title">This is for you if...</h3>
+        <ul class="interested__list">
+          <li class="interested__item">
+            <span class="interested__item-bullet"></span>
+            <span>You believe (like us) that <strong>business owners are the foundation of Canada's economy</strong></span>
+          </li>
+          <li class="interested__item">
+            <span class="interested__item-bullet"></span>
+            <span>You believe the ultra-wealthy <strong>shouldn't be the only ones who get to build generational wealth</strong></span>
+          </li>
+          <li class="interested__item">
+            <span class="interested__item-bullet"></span>
+            <span>You're a Canadian business owner with an <strong>incorporated business</strong></span>
+          </li>
+          <li class="interested__item">
+            <span class="interested__item-bullet"></span>
+            <span>You make <strong>more than you need to live on</strong> and have retained earnings sitting in your corporation</span>
+          </li>
+          <li class="interested__item">
+            <span class="interested__item-bullet"></span>
+            <span>You're ready to <strong>stop accepting "that's just how taxes work"</strong> as an answer</span>
+          </li>
+        </ul>
+        <div class="interested__cta">
+          <a href="#cta" class="btn btn--secondary btn--large">Get Your Free Keep Rate Audit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="faq__header">
+        <p class="eyebrow">Questions</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq__list">
+        <div class="faq-item">
+          <button class="faq-item__question">
+            How is WealthBridge different from my bank's wealth management?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              Banks focus on one thing: investments. They help you grow money you've already lost 50% of to taxes. WealthBridge starts with the drains — we fix your Keep Rate first, then grow what's left. We coordinate accountants, lawyers, insurance advisors, and investment managers under one roof. Your bank will never ask if you should restructure your corporation. We will.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            What does insurance have to do with wealth building?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              In Canada, money inside participating whole life insurance grows tax-free. Money paid out is tax-free. This makes it a powerful wealth-building vehicle — not just protection. We use corporate-owned insurance to park retained earnings, grow them at 5-6% tax-free, then borrow against them to invest elsewhere. You're essentially double-dipping on your investment while paying zero taxes. The death benefit is just a cherry on top.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Is this legal? It sounds too good to be true.
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              100% legal. These are CRA-approved tax strategies that wealthy Canadians have used for decades. The strategies we use — insurance financing, corporate structures, capital dividend accounts — are all within CRA guidelines. The reason most people don't know about them is that traditional advisors don't have the expertise or licensing to offer them. We're regulated by the Financial Services Regulatory Authority of Ontario and follow all compliance requirements.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            How does WealthBridge make money?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              We don't charge for the financial plan if we can help you significantly. Our compensation comes from the products and services we implement — insurance policies, investment management, accounting services. This aligns our interests: we only make money when we actually help you build wealth. The Keep Rate Audit is completely free, and if we don't see opportunities to help, we'll tell you honestly.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            How much do I need to get started?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              You can implement these strategies with as little as $20,000 per year in retained corporate earnings. The key is having income that exceeds what you need to live on. If you make $100K and need $100K to live, incorporation doesn't help. But if you make $150K and need $50K, we can help you shelter $100K at 12% corporate tax instead of 50% personal tax. The higher your retained earnings, the more impactful the strategies become.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Why should I trust you with my wealth?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              I use these strategies myself. I went from paying $70K in taxes to $0. I'm not selling you something I don't believe in — I'm sharing what worked for me. We're licensed and regulated. We have a 100% conversion rate with clients who complete the Keep Rate Audit — because once you see the numbers, the decision makes itself. And we work with you long-term. This isn't a transaction; it's a relationship.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta section" id="cta">
+    <div class="container">
+      <div class="cta__inner">
+        <p class="eyebrow" style="color: var(--gold);">Take the First Step</p>
+        <h2 class="cta__title">What's your Keep Rate?</h2>
+        <p class="subtitle cta__subtitle">Find out how much money you're losing every year — and get a free plan to keep more of it.</p>
+        <div class="cta__buttons">
+          <a href="#" class="btn btn--primary btn--large">Get Your Free Keep Rate Audit</a>
+        </div>
+        <p class="cta__note">Takes 30 minutes. No obligation. If we can't help, we'll tell you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="footer__logo-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <span class="footer__logo-text">WealthBridge</span>
+          </div>
+          <p class="footer__tagline">Raising the Keep Rate for Canadian business owners. The same strategies the ultra-wealthy have used for decades — now accessible to you.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#founder">About Behi</a></li>
+              <li><a href="#solution">Our Approach</a></li>
+              <li><a href="#results">Client Results</a></li>
+              <li><a href="#cta">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#problem">Keep Rate</a></li>
+              <li><a href="#process">How It Works</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#cta">Book a Call</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 WealthBridge Consulting. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer__disclaimer">
+        <strong>Disclaimer:</strong> WealthBridge Consulting is regulated by the Financial Services Regulatory Authority of Ontario. The information provided on this website is for educational purposes only and should not be considered financial, tax, or legal advice. All figures and projections shown are estimates based on individual circumstances. Please consult with qualified professionals before making any financial decisions. Past results do not guarantee future performance.
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Navbar scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-item__question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        
+        // Open clicked if it wasn't active
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Carousel smooth drag scroll with momentum
+    const carouselRows = document.querySelectorAll('.results-carousel__row');
+    
+    carouselRows.forEach(row => {
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      let velX = 0;
+      let momentumID;
+      let lastX;
+      let lastTime;
+
+      // Prevent text selection during drag
+      row.addEventListener('selectstart', (e) => {
+        e.preventDefault();
+      });
+
+      // Clone cards for infinite loop
+      const cards = row.querySelectorAll('.results-card');
+      cards.forEach(card => {
+        const clone = card.cloneNode(true);
+        row.appendChild(clone);
+      });
+
+      // Momentum animation function
+      function applyMomentum() {
+        if (Math.abs(velX) > 0.5) {
+          row.scrollLeft += velX;
+          velX *= 0.92; // Friction - lower = more slide
+          
+          // Check for infinite loop boundaries
+          checkBoundaries();
+          
+          momentumID = requestAnimationFrame(applyMomentum);
+        }
+      }
+
+      // Check boundaries for infinite scroll
+      function checkBoundaries() {
+        const scrollWidth = row.scrollWidth;
+        const halfScroll = scrollWidth / 2;
+        
+        if (row.scrollLeft <= 10) {
+          row.scrollLeft = halfScroll - 10;
+        } else if (row.scrollLeft >= halfScroll - 10) {
+          row.scrollLeft = 10;
+        }
+      }
+
+      // Mouse events
+      row.addEventListener('mousedown', (e) => {
+        isDown = true;
+        cancelAnimationFrame(momentumID);
+        row.style.cursor = 'grabbing';
+        startX = e.pageX;
+        scrollLeft = row.scrollLeft;
+        lastX = e.pageX;
+        lastTime = Date.now();
+        velX = 0;
+        e.preventDefault();
+      });
+
+      row.addEventListener('mouseleave', () => {
+        if (isDown) {
+          isDown = false;
+          row.style.cursor = 'grab';
+          momentumID = requestAnimationFrame(applyMomentum);
+        }
+      });
+
+      row.addEventListener('mouseup', () => {
+        if (isDown) {
+          isDown = false;
+          row.style.cursor = 'grab';
+          momentumID = requestAnimationFrame(applyMomentum);
+        }
+      });
+
+      row.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        
+        const x = e.pageX;
+        const now = Date.now();
+        const dt = now - lastTime;
+        
+        // Calculate velocity based on movement
+        if (dt > 0) {
+          velX = (lastX - x) * 0.3;
+        }
+        
+        const walk = x - startX;
+        row.scrollLeft = scrollLeft - walk;
+        
+        // Check boundaries during drag
+        checkBoundaries();
+        
+        lastX = x;
+        lastTime = now;
+      });
+
+      // Touch events for mobile
+      let touchStartX;
+      let touchScrollLeft;
+      let touchLastX;
+      let touchLastTime;
+
+      row.addEventListener('touchstart', (e) => {
+        cancelAnimationFrame(momentumID);
+        touchStartX = e.touches[0].pageX;
+        touchScrollLeft = row.scrollLeft;
+        touchLastX = touchStartX;
+        touchLastTime = Date.now();
+        velX = 0;
+      }, { passive: true });
+
+      row.addEventListener('touchmove', (e) => {
+        const x = e.touches[0].pageX;
+        const now = Date.now();
+        const dt = now - touchLastTime;
+        
+        // Calculate velocity
+        if (dt > 0) {
+          velX = (touchLastX - x) * 0.3;
+        }
+        
+        const walk = x - touchStartX;
+        row.scrollLeft = touchScrollLeft - walk;
+        
+        // Check boundaries during drag
+        checkBoundaries();
+        
+        touchLastX = x;
+        touchLastTime = now;
+      }, { passive: true });
+
+      row.addEventListener('touchend', () => {
+        momentumID = requestAnimationFrame(applyMomentum);
+      });
+    });
+
+    // Set initial scroll positions
+    function initCarousel() {
+      const row1 = document.getElementById('carousel-row-1');
+      const row2 = document.getElementById('carousel-row-2');
+      const isMobile = window.innerWidth <= 768;
+      
+      // On mobile, start at 0 (padding handles centering)
+      // On desktop, offset for visual interest
+      if (row1) {
+        row1.scrollLeft = isMobile ? 0 : 80;
+      }
+      
+      if (row2) {
+        row2.scrollLeft = isMobile ? 0 : 300;
+      }
+    }
+
+    // Small delay to ensure DOM is ready
+    setTimeout(initCarousel, 100);
+    
+    // Re-center on resize
+    window.addEventListener('resize', initCarousel);
+  </script>
+
+</body>
+</html>
