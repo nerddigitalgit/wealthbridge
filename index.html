@@ -21,6 +21,7 @@
       --gold: #C4A962;
       --gold-light: #D4BE7A;
       --gold-dark: #A89050;
+      --gold-accessible: #8A6F3D; /* Darker gold for better contrast on light backgrounds */
       --sage: #BABFAE;
       --sage-light: #C8CCBF;
       --sage-dark: #A1A697;
@@ -29,8 +30,8 @@
       --slate: #3D3D3D;
       --slate-light: #5A5A5A;
       --white: #FFFFFF;
-      --green: #A1A697;
-      --muted: #8A8A8A;
+      --green: #6B7566; /* Darker green for better contrast */
+      --muted: #666666; /* Darker muted for better contrast */
 
       --font-display: 'Source Serif 4', Georgia, serif;
       --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -147,7 +148,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: var(--gold);
+      color: var(--gold-accessible);
       margin-bottom: 16px;
     }
 
@@ -206,16 +207,16 @@
 
     .btn--outline {
       background: transparent;
-      color: var(--gold-dark);
-      border: 2px solid var(--gold);
-      box-shadow: 6px 6px 0 rgba(196, 169, 98, 0.3);
+      color: var(--gold-accessible);
+      border: 2px solid var(--gold-accessible);
+      box-shadow: 6px 6px 0 rgba(138, 111, 61, 0.3);
     }
 
     .btn--outline:hover {
-      background: var(--gold);
-      color: var(--navy);
+      background: var(--gold-accessible);
+      color: var(--white);
       transform: translateY(-2px);
-      box-shadow: 8px 8px 0 rgba(196, 169, 98, 0.4);
+      box-shadow: 8px 8px 0 rgba(138, 111, 61, 0.4);
     }
 
     /* Nav button - no shadow */
@@ -288,7 +289,7 @@
     }
 
     .link {
-      color: var(--gold);
+      color: var(--gold-accessible);
       font-weight: 600;
       text-decoration: underline;
       text-underline-offset: 3px;
@@ -296,7 +297,7 @@
     }
 
     .link:hover {
-      color: var(--gold-light);
+      color: var(--gold-dark);
     }
 
     /* ==========================================
@@ -398,7 +399,7 @@
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: var(--gold-dark);
+      color: var(--gold-accessible);
       margin-bottom: 20px;
     }
 
@@ -906,13 +907,13 @@
     .results-card__type {
       display: inline-block;
       padding: 4px 10px;
-      background: rgba(196, 169, 98, 0.15);
+      background: rgba(138, 111, 61, 0.2);
       border-radius: 4px;
       font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.03em;
-      color: var(--gold-dark);
+      color: var(--gold-accessible);
       margin-bottom: 10px;
     }
 
@@ -963,7 +964,7 @@
     }
 
     .results-card__metric--after .results-card__metric-value {
-      color: var(--gold-dark);
+      color: var(--gold-accessible);
     }
 
     .results-carousel__cta {
