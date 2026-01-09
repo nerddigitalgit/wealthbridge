@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "eyebrow": "For Canadian Business Owners",
+    "title": "The wealthy don't just earn more. They keep more.",
+    "subtitle": "Your Keep Rate is the share of every dollar you actually keep after tax, fees, and leakage. Most Canadian owners overwork with a low Keep Rate and wonder why freedom never arrives. We raise your Keep Rate by restructuring tax, reallocating retained earnings, cutting cost drag, and fixing withdrawal policy.",
+    "cta_primary": {
+      "text": "Get Your Free Keep Rate Audit",
+      "link": "https://calendly.com/wealthbridgeto/30min?month=2026-01"
+    },
+    "cta_secondary": {
+      "text": "Learn How to Keep More Wealth"
+    }
+  },
+  "problem": {
+    "eyebrow": "The Problem",
+    "title": "You have a low Keep Rate.",
+    "definition": "Keep Rate: The percentage of your income you actually keep after taxes, interest, and wealth drains. It's the single number that determines whether you build generational wealth — or work your whole life with little to show for it.",
+    "left_badge": "~50% Keep Rate",
+    "right_badge": "85%+ Keep Rate"
+  },
+  "solution": {
+    "eyebrow": "The First Step to More Wealth",
+    "title": "Stop losing 50 cents on every dollar.",
+    "lead": "The ultra-wealthy don't start by earning more. They start by keeping more. Before you can grow wealth, you have to stop the drains that are bleeding it away."
+  },
+  "process": {
+    "eyebrow": "What You Get With WealthBridge",
+    "title": "The wealth strategies banks hide behind $50M minimums. We're making them yours.",
+    "cards": [
+      {
+        "title": "Your Free Keep Rate Audit",
+        "text": "A comprehensive analysis of where your money is going. We identify every drain — taxes, structure, cash flow, interest — and show you exactly how much you're losing annually."
+      },
+      {
+        "title": "Your Plan to Keep More Wealth",
+        "text": "A personalized strategy to fix the drains first. Corporate structure, tax optimization, insurance financing — every lever available to stop losing 50 cents on every dollar."
+      },
+      {
+        "title": "Your Plan to Grow More Wealth",
+        "text": "Once you're keeping more, we put it to work. Investment strategies, compound growth vehicles, and tax-free growth mechanisms that accelerate your path to financial freedom."
+      },
+      {
+        "title": "Your Team to Manage It All — For Life",
+        "text": "Accountants, lawyers, insurance advisors, investment managers — all coordinated under one roof. Succession planning, your children's education, charitable giving, estate planning. One point of contact. We handle everything."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Raising the Keep Rate for Canadian business owners. The same strategies the ultra-wealthy have used for decades — now accessible to you.",
+    "copyright": "© 2025 WealthBridge Consulting. All rights reserved.",
+    "disclaimer": "Disclaimer: WealthBridge Consulting is regulated by the Financial Services Regulatory Authority of Ontario. The information provided on this website is for educational purposes only and should not be considered financial, tax, or legal advice. All figures and projections shown are estimates based on individual circumstances. Please consult with qualified professionals before making any financial decisions. Past results do not guarantee future performance."
+  }
+}

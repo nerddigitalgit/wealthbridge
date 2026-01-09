@@ -2720,5 +2720,129 @@
     });
   </script>
 
+  <!-- CMS Content Loader -->
+  <script>
+    // Load content from Decap CMS JSON files
+    async function loadCMSContent() {
+      try {
+        // Load settings and home content
+        const [settings, home] = await Promise.all([
+          fetch('content/settings.json').then(r => r.json()),
+          fetch('content/home.json').then(r => r.json())
+        ]);
+
+        // Update CSS color variables
+        if (settings.colors) {
+          const root = document.documentElement;
+          if (settings.colors.gold) root.style.setProperty('--gold', settings.colors.gold);
+          if (settings.colors.gold_accessible) root.style.setProperty('--gold-accessible', settings.colors.gold_accessible);
+          if (settings.colors.sage) root.style.setProperty('--sage', settings.colors.sage);
+          if (settings.colors.cream) root.style.setProperty('--cream', settings.colors.cream);
+          if (settings.colors.navy) root.style.setProperty('--navy', settings.colors.navy);
+        }
+
+        // Update hero section
+        if (home.hero) {
+          const eyebrow = document.querySelector('.hero__eyebrow');
+          const title = document.querySelector('.hero__title');
+          const subtitle = document.querySelector('.hero__subtitle');
+          const primaryCTA = document.querySelector('.hero__cta .btn--primary');
+          const secondaryCTA = document.querySelector('.hero__cta .btn--outline');
+
+          if (eyebrow && home.hero.eyebrow) eyebrow.textContent = home.hero.eyebrow;
+          if (title && home.hero.title) title.textContent = home.hero.title;
+          if (subtitle && home.hero.subtitle) subtitle.textContent = home.hero.subtitle;
+
+          if (primaryCTA && home.hero.cta_primary) {
+            if (home.hero.cta_primary.text) primaryCTA.textContent = home.hero.cta_primary.text;
+            if (home.hero.cta_primary.link) primaryCTA.href = home.hero.cta_primary.link;
+          }
+
+          if (secondaryCTA && home.hero.cta_secondary) {
+            if (home.hero.cta_secondary.text) secondaryCTA.textContent = home.hero.cta_secondary.text;
+          }
+        }
+
+        // Update problem section
+        if (home.problem) {
+          const problemEyebrow = document.querySelector('.section--problem .eyebrow');
+          const problemTitle = document.querySelector('.section--problem .section__title');
+          const problemDef = document.querySelector('.section--problem .definition');
+          const leftBadge = document.querySelector('.comparison__item:first-child .comparison__badge');
+          const rightBadge = document.querySelector('.comparison__item:last-child .comparison__badge');
+
+          if (problemEyebrow && home.problem.eyebrow) problemEyebrow.textContent = home.problem.eyebrow;
+          if (problemTitle && home.problem.title) problemTitle.textContent = home.problem.title;
+          if (problemDef && home.problem.definition) problemDef.textContent = home.problem.definition;
+          if (leftBadge && home.problem.left_badge) leftBadge.textContent = home.problem.left_badge;
+          if (rightBadge && home.problem.right_badge) rightBadge.textContent = home.problem.right_badge;
+        }
+
+        // Update solution section
+        if (home.solution) {
+          const solutionEyebrow = document.querySelector('.section--solution .eyebrow');
+          const solutionTitle = document.querySelector('.section--solution .section__title');
+          const solutionLead = document.querySelector('.section--solution p');
+
+          if (solutionEyebrow && home.solution.eyebrow) solutionEyebrow.textContent = home.solution.eyebrow;
+          if (solutionTitle && home.solution.title) solutionTitle.textContent = home.solution.title;
+          if (solutionLead && home.solution.lead) solutionLead.textContent = home.solution.lead;
+        }
+
+        // Update process section
+        if (home.process) {
+          const processEyebrow = document.querySelector('.section--process .eyebrow');
+          const processTitle = document.querySelector('.section--process .section__title');
+
+          if (processEyebrow && home.process.eyebrow) processEyebrow.textContent = home.process.eyebrow;
+          if (processTitle && home.process.title) processTitle.textContent = home.process.title;
+
+          // Update process cards
+          if (home.process.cards && Array.isArray(home.process.cards)) {
+            const cards = document.querySelectorAll('.process__card');
+            home.process.cards.forEach((cardData, index) => {
+              if (cards[index]) {
+                const cardTitle = cards[index].querySelector('h3');
+                const cardText = cards[index].querySelector('p');
+                if (cardTitle && cardData.title) cardTitle.textContent = cardData.title;
+                if (cardText && cardData.text) cardText.textContent = cardData.text;
+              }
+            });
+          }
+        }
+
+        // Update footer
+        if (home.footer) {
+          const tagline = document.querySelector('.footer__tagline');
+          const copyright = document.querySelector('.footer__legal p:first-child');
+          const disclaimer = document.querySelector('.footer__legal p:last-child');
+
+          if (tagline && home.footer.tagline) tagline.textContent = home.footer.tagline;
+          if (copyright && home.footer.copyright) copyright.textContent = home.footer.copyright;
+          if (disclaimer && home.footer.disclaimer) disclaimer.textContent = home.footer.disclaimer;
+        }
+
+        // Update all Calendly links
+        if (settings.calendly_url) {
+          document.querySelectorAll('a[href*="calendly.com"]').forEach(link => {
+            link.href = settings.calendly_url;
+          });
+        }
+
+        console.log('CMS content loaded successfully');
+      } catch (error) {
+        console.error('Error loading CMS content:', error);
+        // Fail silently - use default HTML content if JSON fails to load
+      }
+    }
+
+    // Load content when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadCMSContent);
+    } else {
+      loadCMSContent();
+    }
+  </script>
+
 </body>
 </html>
