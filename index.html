@@ -6,17 +6,13 @@
   <title>WealthBridge Consulting | Raise Your Keep Rate</title>
 
   <!-- TinaCMS -->
-  <script type="module">
-    import { TinaAdmin } from 'https://esm.sh/@tinacms/admin@1.0.0';
-
-    // Enable TinaCMS edit mode when ?edit is in URL
+  <script>
+    // Redirect to TinaCMS Cloud editor when ?edit is in URL
     if (window.location.search.includes('edit')) {
-      const admin = new TinaAdmin({
-        clientId: '94aef55d-9375-4f06-94d2-3bafc4d1bdf0',
-        branch: 'main',
-        repositoryUrl: 'https://github.com/nerddigitalgit/wealthbridge',
-      });
-      admin.enable();
+      const clientId = '94aef55d-9375-4f06-94d2-3bafc4d1bdf0';
+      const branch = 'main';
+      const currentPath = window.location.pathname === '/' ? '/index.html' : window.location.pathname;
+      window.location.href = `https://app.tina.io/projects/${clientId}/editor?path=${currentPath}&branch=${branch}`;
     }
   </script>
 
