@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "tinacms dev -c \"npx http-server . -p 3000\"",
-    "build": "tinacms build || echo 'TinaCMS build skipped - static site'"
+    "build": "tinacms build --skip-cloud-checks || tinacms build --local || echo 'Using static admin'"
   },
   "devDependencies": {
     "@tinacms/cli": "^1.6.7",
