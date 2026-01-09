@@ -4,6 +4,7 @@
     "minor": "2",
     "patch": "7"
   },
+
   "collections": [
     {
       "name": "settings",
