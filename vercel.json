@@ -1,0 +1,19 @@
+{
+  "headers": [
+    {
+      "source": "/admin/config.yml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/yaml; charset=utf-8"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/admin",
+      "dest": "/admin/index.html"
+    }
+  ]
+}
