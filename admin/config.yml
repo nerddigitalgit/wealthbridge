@@ -2,11 +2,6 @@ backend:
   name: github
   repo: nerddigitalgit/wealthbridge
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-
-# Local development
-local_backend: true
 
 media_folder: "images"
 public_folder: "images"
