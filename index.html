@@ -4,12 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WealthBridge Consulting | Raise Your Keep Rate</title>
-  
+
+  <!-- TinaCMS -->
+  <script type="module">
+    import { TinaAdmin } from 'https://esm.sh/@tinacms/admin@1.0.0';
+
+    // Enable TinaCMS edit mode when ?edit is in URL
+    if (window.location.search.includes('edit')) {
+      const admin = new TinaAdmin({
+        clientId: '94aef55d-9375-4f06-94d2-3bafc4d1bdf0',
+        branch: 'main',
+        repositoryUrl: 'https://github.com/nerddigitalgit/wealthbridge',
+      });
+      admin.enable();
+    }
+  </script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+
   <style>
     /* ==========================================
        CSS VARIABLES
