@@ -750,7 +750,7 @@ export default function Home() {
 
               <div className="founder__signature-details">
                 <div className="founder__signature-photo">
-                  <img src="images/Behi-headshot.png" alt="Behi Shafiei" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2Fc1b2746894e54131b1ae91e0d6c8a0f0" alt="Behi Shafiei" />
                 </div>
                 <div>
                   <p className="founder__signature-name">Behi Shafiei</p>
@@ -952,7 +952,7 @@ export default function Home() {
           <div className="footer__inner">
             <div className="footer__brand">
               <div className="footer__logo">
-                <img src="images/wealthbridge-logo-full-vertical.png" alt="WealthBridge" className="footer__logo-img" />
+                <img src="https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2Fb1ad0089dd5444539cbdfb50e72949d9" alt="WealthBridge" className="footer__logo-img" />
               </div>
               <p className="footer__tagline">Raising the Keep Rate for Canadian business owners. The same strategies the ultra-wealthy have used for decades — now accessible to you.</p>
             </div>
