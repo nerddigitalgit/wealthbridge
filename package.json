@@ -2,7 +2,7 @@
   "name": "wealthbridge",
   "version": "1.0.0",
   "scripts": {
-    "build": "tinacms build"
+    "build": "tinacms build --skip-cloud-checks"
   },
   "devDependencies": {
     "@tinacms/cli": "^1.6.7",
