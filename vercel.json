@@ -8,6 +8,11 @@
       "memory": 1024,
       "maxDuration": 10
     }
+  },
+  "git": {
+    "deploymentEnabled": {
+      "nextjs-builderio": true
+    }
   }
 }
 
