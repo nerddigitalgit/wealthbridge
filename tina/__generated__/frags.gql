@@ -1,0 +1,62 @@
+fragment SettingsParts on Settings {
+  __typename
+  site_title
+  colors {
+    __typename
+    gold
+    gold_accessible
+    sage
+    cream
+    navy
+  }
+  calendly_url
+}
+
+fragment HomeParts on Home {
+  __typename
+  hero {
+    __typename
+    eyebrow
+    title
+    subtitle
+    cta_primary {
+      __typename
+      text
+      link
+    }
+    cta_secondary {
+      __typename
+      text
+    }
+  }
+  problem {
+    __typename
+    eyebrow
+    title
+    definition
+    left_badge
+    right_badge
+  }
+  solution {
+    __typename
+    eyebrow
+    title
+    lead
+  }
+  process {
+    __typename
+    eyebrow
+    title
+    cards {
+      __typename
+      title
+      text
+    }
+  }
+  footer {
+    __typename
+    tagline
+    copyright
+    disclaimer
+  }
+}
