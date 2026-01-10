@@ -5,7 +5,7 @@
     "build": "tinacms build --skip-cloud-checks"
   },
   "devDependencies": {
-    "@tinacms/cli": "^3.2.0",
-    "tinacms": "^2.10.1"
+    "@tinacms/cli": "^1.10.0",
+    "tinacms": "^2.8.0"
   }
 }
