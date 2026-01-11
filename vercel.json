@@ -1,8 +1,0 @@
-{
-  "git": {
-    "deploymentEnabled": {
-      "nextjs-builderio": true
-    }
-  }
-}
-
