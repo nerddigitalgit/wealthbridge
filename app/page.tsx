@@ -527,26 +527,6 @@ export default function Home() {
             </div>
             <div className="results-card">
               <div className="results-card__avatar">
-                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face" alt="Business owner portrait" />
-              </div>
-              <div className="results-card__content">
-                <span className="results-card__type">Business Owner • $300K</span>
-                <h3 className="results-card__headline">$70K → $0 in taxes</h3>
-                <p className="results-card__text">Using insurance financing and proper structure, she now pays $0. Same lifestyle.</p>
-                <div className="results-card__metrics">
-                  <div className="results-card__metric results-card__metric--before">
-                    <p className="results-card__metric-label">Before</p>
-                    <p className="results-card__metric-value">$70,000/yr</p>
-                  </div>
-                  <div className="results-card__metric results-card__metric--after">
-                    <p className="results-card__metric-label">After</p>
-                    <p className="results-card__metric-value">$0/yr</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="results-card">
-              <div className="results-card__avatar">
                 <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&crop=face" alt="Solopreneur portrait" />
               </div>
               <div className="results-card__content">
