@@ -311,7 +311,7 @@ export default function Home() {
         <div className="container">
           <div className="hero__content">
             <p className="hero__eyebrow animate">For Canadian Business Owners</p>
-            <h1 className="hero__title animate animate-delay-1">The wealthy don&apos;t just earn more. They keep more.</h1>
+            <h1 className="hero__title animate animate-delay-1">The wealthy don&apos;t just earn more. They <span>keep</span> more.</h1>
             <p className="hero__subtitle animate animate-delay-2">Your Keep Rate is the share of every dollar you actually keep after tax, fees, and leakage. Most Canadian owners overwork with a low Keep Rate and wonder why freedom never arrives. We raise your Keep Rate by restructuring tax, reallocating retained earnings, cutting cost drag, and fixing withdrawal policy.</p>
             <div className="hero__cta animate animate-delay-3">
               <a href="https://calendly.com/wealthbridgeto/30min?month=2026-01" className="btn btn--primary btn--large">Get Your Free Keep Rate Audit</a>
