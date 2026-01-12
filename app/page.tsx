@@ -887,17 +887,6 @@ export default function Home() {
             </div>
             <div className="faq-item">
               <button className="faq-item__question">
-                What does insurance have to do with wealth building?
-                <span className="faq-item__icon">+</span>
-              </button>
-              <div className="faq-item__answer">
-                <div className="faq-item__answer-inner">
-                  In Canada, certain types of permanent life insurance — when structured properly — can play a strategic role in long-term wealth planning. For incorporated business owners, corporate-owned permanent insurance may offer a tax-advantaged environment for long-term growth, the ability to position retained earnings to reduce tax friction, and flexibility around liquidity and estate planning. Growth inside the policy is tax-deferred, access to value can be structured through policy loans, and proceeds may flow through the Capital Dividend Account (CDA) for tax-free distributions. At Wealth Bridge, we use insurance selectively — as one layer within a coordinated Wealth Stack, alongside tax strategy, corporate structure, and investments.
-                </div>
-              </div>
-            </div>
-            <div className="faq-item">
-              <button className="faq-item__question">
                 Is this legal? It sounds too good to be true.
                 <span className="faq-item__icon">+</span>
               </button>
