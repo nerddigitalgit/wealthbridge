@@ -746,7 +746,7 @@ export default function Home() {
         <div className="container">
           <div className="process__header">
             <p className="eyebrow">What You Get With WealthBridge</p>
-            <h2>The wealth strategies banks hide behind $50M minimums. We&apos;re making them yours.</h2>
+            <h2>Your Plan to Keep More Wealth</h2>
           </div>
           <div className="process__layout">
             <div className="process__cards">
@@ -756,7 +756,7 @@ export default function Home() {
               </div>
               <div className="process-card">
                 <h3 className="process-card__title">Your Plan to Keep More Wealth</h3>
-                <p className="process-card__text">A personalized strategy to fix the drains first. Corporate structure, tax optimization, insurance financing — every lever available to stop losing 50 cents on every dollar.</p>
+                <p className="process-card__text">A personalized strategy to fix the drains first. Corporate structure, and tax optimization strategies, and every other lever available to stop losing 50 cents on every dollar.</p>
               </div>
               <div className="process-card">
                 <h3 className="process-card__title">Your Plan to Grow More Wealth</h3>
@@ -796,7 +796,7 @@ export default function Home() {
       <section className="interested section" id="interested">
         <div className="container">
           <div className="interested__header">
-            <h2>Interested?</h2>
+            <h2>Let&apos;s Talk</h2>
           </div>
           <div className="interested__box fade-in">
             <h3 className="interested__box-title">This is for you if...</h3>
