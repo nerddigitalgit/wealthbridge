@@ -334,9 +334,9 @@ export default function Home() {
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face" alt="Lawyer portrait" />
               </div>
               <div className="quickproof__content">
-                <h3 className="quickproof__headline">$3.2M saved over career</h3>
-                <p className="quickproof__meta">Lawyer • 12 Years in Practice</p>
-                <p className="quickproof__text">Partner at a major firm. RBC wealth client. Nobody asked: &quot;Why aren&apos;t you incorporated?&quot; We did.</p>
+                <h3 className="quickproof__headline">$3.2M saved in taxes over 15 yrs</h3>
+                <p className="quickproof__meta">12 YEARS IN PRACTICE • $600K INCOME<br /><br /></p>
+                <p className="quickproof__text">Nobody asked: &quot;Why aren&apos;t you incorporated?&quot; We did.</p>
               </div>
             </div>
             <div className="quickproof__card fade-in">
@@ -344,9 +344,9 @@ export default function Home() {
                 <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face" alt="Business owner portrait" />
               </div>
               <div className="quickproof__content">
-                <h3 className="quickproof__headline">$70K → $0 in taxes</h3>
-                <p className="quickproof__meta">Business Owner • $300K Revenue</p>
-                <p className="quickproof__text">She was paying $70,000 in taxes. Using insurance financing and proper structure, she now pays $0.</p>
+                <h3 className="quickproof__headline">$0 in taxes to <br />build wealth </h3>
+                <p className="quickproof__meta">BUSINESS OWNER • <br />$500K REVENUE<br /><br /></p>
+                <p className="quickproof__text">Using tax efficient vehicles, she now pays $0 in taxes.</p>
               </div>
             </div>
             <div className="quickproof__card fade-in">
@@ -355,8 +355,8 @@ export default function Home() {
               </div>
               <div className="quickproof__content">
                 <h3 className="quickproof__headline">$44M projected net worth</h3>
-                <p className="quickproof__meta">Executive • $1M+ Income</p>
-                <p className="quickproof__text">Making $1M/year with only $2.3M net worth. His pension wasn&apos;t invested. We fixed that.</p>
+                <p className="quickproof__meta">Executive • <br />$1M+ Income<br /><br /></p>
+                <p className="quickproof__text">Pension wasn&apos;t invested. We fixed that.</p>
               </div>
             </div>
           </div>
@@ -384,11 +384,11 @@ export default function Home() {
                 <ul className="problem__list">
                   <li className="problem__item">
                     <span className="problem__item-icon">✗</span>
-                    <span className="problem__item-text">Pay <strong>36-50% personal tax</strong> before you can invest</span>
+                    <span className="problem__item-text">Pay <strong>36-53% personal tax</strong> before you can invest</span>
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✗</span>
-                    <span className="problem__item-text">Wrong legal structure — taxed at personal rates</span>
+                    <div style={{ display: "block", color: "rgb(61, 61, 61)", fontWeight: "400", marginLeft: "1px" }}>Wrong legal structure, taxed at personal rates</div>
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✗</span>
