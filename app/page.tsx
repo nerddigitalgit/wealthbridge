@@ -455,27 +455,27 @@ export default function Home() {
             <div className="solution-card fade-in">
               <div className="solution-card__step">2</div>
               <h3 className="solution-card__title">Fix Your Structure</h3>
-              <p className="solution-card__text">Incorporation is layer one. But are you structured for wealth building or just day-to-day operations? Set up the right entities for where you&apos;re going.</p>
+              <p className="solution-card__text">Incorporation is layer one. There are many layers after. Are you structured for wealth building or just day-to-day operations? Set up the right entities for where you&apos;re going.</p>
             </div>
             <div className="solution-card fade-in">
               <div className="solution-card__step">3</div>
               <h3 className="solution-card__title">Eliminate Unnecessary Tax</h3>
-              <p className="solution-card__text">Your biggest expense isn&apos;t your mortgage — it&apos;s your taxes. Use corporate-owned insurance, capital dividend accounts, and proper compensation to reduce tax by 30-40%.</p>
+              <p className="solution-card__text">Your biggest expense isn&apos;t your mortgage, it&apos;s your taxes. Create tax-efficient vehicle to grow your wealth and reduce your marginal tax rate. </p>
             </div>
             <div className="solution-card fade-in">
               <div className="solution-card__step">4</div>
               <h3 className="solution-card__title">Activate Retained Earnings</h3>
-              <p className="solution-card__text">Money sitting in your corporation should be working. Position it in tax-exempt vehicles that grow 5-6% annually — accessible without triggering income.</p>
+              <p className="solution-card__text">Money sitting in your corporation should be working. Position it in tax-exempt vehicles that grow annually — accessible without triggering taxes.</p>
             </div>
             <div className="solution-card fade-in">
               <div className="solution-card__step">5</div>
-              <h3 className="solution-card__title">Create Liquidity Without Tax</h3>
-              <p className="solution-card__text">Need cash? Borrow against assets instead of withdrawing income. Pay 5% interest instead of 36-50% tax. The money keeps growing. You get access.</p>
+              <h3 className="solution-card__title">Create Liquidity</h3>
+              <p className="solution-card__text"><div>The real cost of accessing corporate wealth isn&apos;t the 12-27% corporate tax you&apos;ve already paid. It&apos;s the additional 36-53% personal tax on withdrawal. That&apos;s the problem we&apos;re solving.<br /></div></p>
             </div>
             <div className="solution-card fade-in">
               <div className="solution-card__step">6</div>
               <h3 className="solution-card__title">Design Tax-Free Retirement</h3>
-              <p className="solution-card__text">The goal: multiple streams of tax-free income in retirement. Design your exit strategy now so you keep what you earned — not half of it.</p>
+              <p className="solution-card__text">The goal: multiple streams of tax-efficient income in retirement. Design your exit strategy now so you keep what you earned, not only half of it.</p>
             </div>
           </div>
           <div className="solution__cta">
