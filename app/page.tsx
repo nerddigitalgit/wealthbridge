@@ -708,15 +708,52 @@ export default function Home() {
 
             <p className="founder__greeting">Hi there,</p>
 
-            <p className="founder__story">I left my Ontario Treasury Board Analyst role to build a business. In my first year as a realtor, I earned just over $200,000. It looked like success — until tax season. A large portion disappeared to personal tax.</p>
-
-            <p className="founder__story">Meanwhile, my broker — same office, same market — earned seven figures and kept far more of it. The difference wasn&apos;t effort. It was structure.</p>
-
-            <p className="founder__story">I was too &quot;small&quot; for private wealth firms. Too complex for bank advice. No one was explaining how tax, structure, and long-term planning actually work together. So I learned the hard way — incorporation, tax planning, capital positioning. I made mistakes, but I also learned something most business owners never see: wealth isn&apos;t built by earning more. It&apos;s built by keeping more.</p>
-
-            <p className="founder__story">Wealth Bridge exists to close that gap. We help Canadian business owners design smarter structures so their money works harder — without aggressive strategies or guesswork.</p>
-
-            <p className="founder__story">If you&apos;ve built a successful business but feel like wealth should be easier, you&apos;re not behind. You&apos;re ready for a better framework. We offer a complimentary Keep Rate Audit to identify where wealth may be quietly leaking. No pressure. Just clarity.</p>
+            <div className="founder__story">
+              <div>
+                I left my job as an Ontario Treasury Board Analyst to build something of my own. My first year in business, I earned just over $200,000. It felt like success, until tax season, when a huge portion disappeared.
+              </div>
+              <div>
+                <br />
+                My business counterpart, same market, earned seven figures and kept most of it. The difference wasn&apos;t effort. It was structure.
+              </div>
+              <div>
+                <br />I was too &quot;small&quot; for private wealth firms. Too complex for bank advice. No one explained how tax, incorporation, and planning work together. So, I learned the hard way, and made expensive mistakes along the way.
+              </div>
+              <div>
+                <br />
+                But those mistakes taught me something: wealth isn&apos;t just built by earning more. It&apos;s built by keeping more.
+              </div>
+              <div>
+                <br />
+                As a first-generation Iranian Canadian immigrant, I&apos;d already spent my life navigating systems that weren&apos;t designed for people like me. I knew what it felt like to be overlooked or pushed into cookie-cutter solutions.
+              </div>
+              <div>
+                <br />
+                And I saw it happening everywhere—to women entrepreneurs, visible minorities, and other immigrants.
+              </div>
+              <div>
+                <br />
+                That&apos;s why I founded Wealth Bridge Consulting.
+              </div>
+              <div>
+                <br />
+                We close the wealth gap between what you earn and what you keep, by designing smarter structures without the guesswork. We shift the decision power back to you, where it belongs.
+              </div>
+              <div>
+                <br />
+                If you&apos;ve built a successful business but feel like wealth should be easier, you&apos;re not behind. You&apos;re ready for a better framework.
+              </div>
+              <div>
+                <br />
+                We offer a complimentary Keep Rate Audit to show you where wealth may be quietly leaking. No pressure. Just clarity.
+              </div>
+              <div>
+                <br />
+                Your success isn&apos;t a transaction. It&apos;s a transformation.
+                <br />
+                <br />
+              </div>
+            </div>
 
             <div className="founder__signature-area">
               <svg className="founder__signature-svg" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
