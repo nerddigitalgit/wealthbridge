@@ -885,7 +885,7 @@ export default function Home() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-item__question">
+              <button className="faq-item__question" content="Yes — when done properly, these strategies are legal and well-established within Canadian tax law. The planning approaches we use are grounded in existing Canadian legislation and CRA-recognized frameworks. They've been used by business owners and families for decades. What matters is how they're implemented: structured correctly, aligned with CRA rules, and coordinated with licensed professional tax and legal advice. We emphasize proper documentation, transparency, and suitability based on your specific situation. Good planning should feel clear, not risky or rushed.">
                 Is this legal? It sounds too good to be true.
                 <span className="faq-item__icon">+</span>
               </button>
