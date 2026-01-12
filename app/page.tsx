@@ -783,7 +783,6 @@ export default function Home() {
         <div className="container">
           <div className="process__header">
             <p className="eyebrow">What You Get With WealthBridge</p>
-            <h2>Your Plan to Keep More Wealth</h2>
           </div>
           <div className="process__layout">
             <div className="process__cards">
