@@ -470,7 +470,7 @@ export default function Home() {
             <div className="solution-card fade-in">
               <div className="solution-card__step">5</div>
               <h3 className="solution-card__title">Create Liquidity</h3>
-              <p className="solution-card__text"><div>The real cost of accessing corporate wealth isn&apos;t the 12-27% corporate tax you&apos;ve already paid. It&apos;s the additional 36-53% personal tax on withdrawal. That&apos;s the problem we&apos;re solving.<br /></div></p>
+              <p className="solution-card__text">The real cost of accessing corporate wealth isn&apos;t the 12-27% corporate tax you&apos;ve already paid. It&apos;s the additional 36-53% personal tax on withdrawal. That&apos;s the problem we&apos;re solving.</p>
             </div>
             <div className="solution-card fade-in">
               <div className="solution-card__step">6</div>
