@@ -291,7 +291,7 @@ export default function Home() {
         <div className="container">
           <div className="nav__inner">
             <a href="#" className="nav__logo">
-              <img src="images/wealthbridge-logo-full-vertical.png" alt="WealthBridge" className="nav__logo-img" />
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2Ff7b2d5722c154463a1030bb8f85b5372" alt="WealthBridge" className="nav__logo-img" />
             </a>
             <ul className="nav__links">
               <li><a href="#solution" className="nav__link">Our Approach</a></li>
@@ -311,7 +311,7 @@ export default function Home() {
         <div className="container">
           <div className="hero__content">
             <p className="hero__eyebrow animate">For Canadian Business Owners</p>
-            <h1 className="hero__title animate animate-delay-1">The wealthy don&apos;t just earn more. They keep more.</h1>
+            <h1 className="hero__title animate animate-delay-1">The wealthy don&apos;t just earn more. They <span>keep</span> more.</h1>
             <p className="hero__subtitle animate animate-delay-2">Your Keep Rate is the share of every dollar you actually keep after tax, fees, and leakage. Most Canadian owners overwork with a low Keep Rate and wonder why freedom never arrives. We raise your Keep Rate by restructuring tax, reallocating retained earnings, cutting cost drag, and fixing withdrawal policy.</p>
             <div className="hero__cta animate animate-delay-3">
               <a href="https://calendly.com/wealthbridgeto/30min?month=2026-01" className="btn btn--primary btn--large">Get Your Free Keep Rate Audit</a>
@@ -334,9 +334,9 @@ export default function Home() {
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face" alt="Lawyer portrait" />
               </div>
               <div className="quickproof__content">
-                <h3 className="quickproof__headline">$3.2M saved over career</h3>
-                <p className="quickproof__meta">Lawyer • 12 Years in Practice</p>
-                <p className="quickproof__text">Partner at a major firm. RBC wealth client. Nobody asked: &quot;Why aren&apos;t you incorporated?&quot; We did.</p>
+                <h3 className="quickproof__headline">$3.2M saved in taxes over 15 yrs</h3>
+                <p className="quickproof__meta">12 YEARS IN PRACTICE • $600K INCOME<br /><br /></p>
+                <p className="quickproof__text">Nobody asked: &quot;Why aren&apos;t you incorporated?&quot; We did.</p>
               </div>
             </div>
             <div className="quickproof__card fade-in">
@@ -344,9 +344,9 @@ export default function Home() {
                 <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face" alt="Business owner portrait" />
               </div>
               <div className="quickproof__content">
-                <h3 className="quickproof__headline">$70K → $0 in taxes</h3>
-                <p className="quickproof__meta">Business Owner • $300K Revenue</p>
-                <p className="quickproof__text">She was paying $70,000 in taxes. Using insurance financing and proper structure, she now pays $0.</p>
+                <h3 className="quickproof__headline">$0 in taxes to <br />build wealth </h3>
+                <p className="quickproof__meta">BUSINESS OWNER • <br />$500K REVENUE<br /><br /></p>
+                <p className="quickproof__text">Using tax efficient vehicles, she now pays $0 in taxes.</p>
               </div>
             </div>
             <div className="quickproof__card fade-in">
@@ -355,8 +355,8 @@ export default function Home() {
               </div>
               <div className="quickproof__content">
                 <h3 className="quickproof__headline">$44M projected net worth</h3>
-                <p className="quickproof__meta">Executive • $1M+ Income</p>
-                <p className="quickproof__text">Making $1M/year with only $2.3M net worth. His pension wasn&apos;t invested. We fixed that.</p>
+                <p className="quickproof__meta">Executive • <br />$1M+ Income<br /><br /></p>
+                <p className="quickproof__text">Pension wasn&apos;t invested. We fixed that.</p>
               </div>
             </div>
           </div>
@@ -384,11 +384,11 @@ export default function Home() {
                 <ul className="problem__list">
                   <li className="problem__item">
                     <span className="problem__item-icon">✗</span>
-                    <span className="problem__item-text">Pay <strong>36-50% personal tax</strong> before you can invest</span>
+                    <span className="problem__item-text">Pay <strong>36-53% personal tax</strong> before you can invest</span>
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✗</span>
-                    <span className="problem__item-text">Wrong legal structure — taxed at personal rates</span>
+                    <div style={{ display: "block", color: "rgb(61, 61, 61)", fontWeight: "400", marginLeft: "1px" }}>Wrong legal structure, taxed at personal rates</div>
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✗</span>
@@ -400,7 +400,7 @@ export default function Home() {
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✗</span>
-                    <span className="problem__item-text">RRSP withdrawals taxed at <strong>36-50%</strong> in retirement</span>
+                    <span className="problem__item-text">RRSP withdrawals taxed at <strong>36-53%</strong> in retirement</span>
                   </li>
                 </ul>
               </div>
@@ -410,7 +410,7 @@ export default function Home() {
                 <ul className="problem__list">
                   <li className="problem__item">
                     <span className="problem__item-icon">✓</span>
-                    <span className="problem__item-text">Pay <strong>0-12% taxes</strong> using corporate structures</span>
+                    <span className="problem__item-text">Pay <strong>0-12% taxes</strong></span>
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✓</span>
@@ -418,15 +418,11 @@ export default function Home() {
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✓</span>
-                    <span className="problem__item-text">Retained earnings grow <strong>tax-free</strong> in insurance vehicles</span>
+                    <span className="problem__item-text">Retained earnings grow <strong>tax-free</strong> in tax-efficient vehicles</span>
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✓</span>
-                    <span className="problem__item-text">Borrow against assets — pay <strong>5% interest</strong> instead of 50% tax</span>
-                  </li>
-                  <li className="problem__item">
-                    <span className="problem__item-icon">✓</span>
-                    <span className="problem__item-text"><strong>Tax-free</strong> retirement income streams</span>
+                    <span className="problem__item-text"><strong>Tax-Efficient</strong> retirement income streams</span>
                   </li>
                 </ul>
               </div>
@@ -459,27 +455,27 @@ export default function Home() {
             <div className="solution-card fade-in">
               <div className="solution-card__step">2</div>
               <h3 className="solution-card__title">Fix Your Structure</h3>
-              <p className="solution-card__text">Incorporation is layer one. But are you structured for wealth building or just day-to-day operations? Set up the right entities for where you&apos;re going.</p>
+              <p className="solution-card__text">Incorporation is layer one. There are many layers after. Are you structured for wealth building or just day-to-day operations? Set up the right entities for where you&apos;re going.</p>
             </div>
             <div className="solution-card fade-in">
               <div className="solution-card__step">3</div>
               <h3 className="solution-card__title">Eliminate Unnecessary Tax</h3>
-              <p className="solution-card__text">Your biggest expense isn&apos;t your mortgage — it&apos;s your taxes. Use corporate-owned insurance, capital dividend accounts, and proper compensation to reduce tax by 30-40%.</p>
+              <p className="solution-card__text">Your biggest expense isn&apos;t your mortgage, it&apos;s your taxes. Create tax-efficient vehicle to grow your wealth and reduce your marginal tax rate. </p>
             </div>
             <div className="solution-card fade-in">
               <div className="solution-card__step">4</div>
               <h3 className="solution-card__title">Activate Retained Earnings</h3>
-              <p className="solution-card__text">Money sitting in your corporation should be working. Position it in tax-exempt vehicles that grow 5-6% annually — accessible without triggering income.</p>
+              <p className="solution-card__text">Money sitting in your corporation should be working. Position it in tax-exempt vehicles that grow annually — accessible without triggering taxes.</p>
             </div>
             <div className="solution-card fade-in">
               <div className="solution-card__step">5</div>
-              <h3 className="solution-card__title">Create Liquidity Without Tax</h3>
-              <p className="solution-card__text">Need cash? Borrow against assets instead of withdrawing income. Pay 5% interest instead of 36-50% tax. The money keeps growing. You get access.</p>
+              <h3 className="solution-card__title">Create Liquidity</h3>
+              <p className="solution-card__text">The real cost of accessing corporate wealth isn&apos;t the 12-27% corporate tax you&apos;ve already paid. It&apos;s the additional 36-53% personal tax on withdrawal. That&apos;s the problem we&apos;re solving.</p>
             </div>
             <div className="solution-card fade-in">
               <div className="solution-card__step">6</div>
               <h3 className="solution-card__title">Design Tax-Free Retirement</h3>
-              <p className="solution-card__text">The goal: multiple streams of tax-free income in retirement. Design your exit strategy now so you keep what you earned — not half of it.</p>
+              <p className="solution-card__text">The goal: multiple streams of tax-efficient income in retirement. Design your exit strategy now so you keep what you earned, not only half of it.</p>
             </div>
           </div>
           <div className="solution__cta">
@@ -521,26 +517,6 @@ export default function Home() {
                   <div className="results-card__metric results-card__metric--after">
                     <p className="results-card__metric-label">After</p>
                     <p className="results-card__metric-value">12% taxes</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="results-card">
-              <div className="results-card__avatar">
-                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face" alt="Business owner portrait" />
-              </div>
-              <div className="results-card__content">
-                <span className="results-card__type">Business Owner • $300K</span>
-                <h3 className="results-card__headline">$70K → $0 in taxes</h3>
-                <p className="results-card__text">Using insurance financing and proper structure, she now pays $0. Same lifestyle.</p>
-                <div className="results-card__metrics">
-                  <div className="results-card__metric results-card__metric--before">
-                    <p className="results-card__metric-label">Before</p>
-                    <p className="results-card__metric-value">$70,000/yr</p>
-                  </div>
-                  <div className="results-card__metric results-card__metric--after">
-                    <p className="results-card__metric-label">After</p>
-                    <p className="results-card__metric-value">$0/yr</p>
                   </div>
                 </div>
               </div>
@@ -726,21 +702,58 @@ export default function Home() {
           <div className="founder__card fade-in">
             <div className="founder__logo-header">
               <div className="founder__logo-line"></div>
-              <img src="images/wealthbridge-icon.png" alt="WealthBridge" className="founder__logo-icon" />
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F6d3a3472ecbc49f3997947bb8287fffa" alt="WealthBridge" className="founder__logo-icon" />
               <div className="founder__logo-line"></div>
             </div>
 
             <p className="founder__greeting">Hi there,</p>
 
-            <p className="founder__story">I left my Ontario Treasury Board Analyst role to build a business. In my first year as a realtor, I earned just over $200,000. It looked like success — until tax season. A large portion disappeared to personal tax.</p>
-
-            <p className="founder__story">Meanwhile, my broker — same office, same market — earned seven figures and kept far more of it. The difference wasn&apos;t effort. It was structure.</p>
-
-            <p className="founder__story">I was too &quot;small&quot; for private wealth firms. Too complex for bank advice. No one was explaining how tax, structure, and long-term planning actually work together. So I learned the hard way — incorporation, tax planning, capital positioning. I made mistakes, but I also learned something most business owners never see: wealth isn&apos;t built by earning more. It&apos;s built by keeping more.</p>
-
-            <p className="founder__story">Wealth Bridge exists to close that gap. We help Canadian business owners design smarter structures so their money works harder — without aggressive strategies or guesswork.</p>
-
-            <p className="founder__story">If you&apos;ve built a successful business but feel like wealth should be easier, you&apos;re not behind. You&apos;re ready for a better framework. We offer a complimentary Keep Rate Audit to identify where wealth may be quietly leaking. No pressure. Just clarity.</p>
+            <div className="founder__story">
+              <div>
+                I left my job as an Ontario Treasury Board Analyst to build something of my own. My first year in business, I earned just over $200,000. It felt like success, until tax season, when a huge portion disappeared.
+              </div>
+              <div>
+                <br />
+                My business counterpart, same market, earned seven figures and kept most of it. The difference wasn&apos;t effort. It was structure.
+              </div>
+              <div>
+                <br />I was too &quot;small&quot; for private wealth firms. Too complex for bank advice. No one explained how tax, incorporation, and planning work together. So, I learned the hard way, and made expensive mistakes along the way.
+              </div>
+              <div>
+                <br />
+                But those mistakes taught me something: wealth isn&apos;t just built by earning more. It&apos;s built by keeping more.
+              </div>
+              <div>
+                <br />
+                As a first-generation Iranian Canadian immigrant, I&apos;d already spent my life navigating systems that weren&apos;t designed for people like me. I knew what it felt like to be overlooked or pushed into cookie-cutter solutions.
+              </div>
+              <div>
+                <br />
+                And I saw it happening everywhere—to women entrepreneurs, visible minorities, and other immigrants.
+              </div>
+              <div>
+                <br />
+                That&apos;s why I founded Wealth Bridge Consulting.
+              </div>
+              <div>
+                <br />
+                We close the wealth gap between what you earn and what you keep, by designing smarter structures without the guesswork. We shift the decision power back to you, where it belongs.
+              </div>
+              <div>
+                <br />
+                If you&apos;ve built a successful business but feel like wealth should be easier, you&apos;re not behind. You&apos;re ready for a better framework.
+              </div>
+              <div>
+                <br />
+                We offer a complimentary Keep Rate Audit to show you where wealth may be quietly leaking. No pressure. Just clarity.
+              </div>
+              <div>
+                <br />
+                Your success isn&apos;t a transaction. It&apos;s a transformation.
+                <br />
+                <br />
+              </div>
+            </div>
 
             <div className="founder__signature-area">
               <svg className="founder__signature-svg" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
@@ -750,7 +763,7 @@ export default function Home() {
 
               <div className="founder__signature-details">
                 <div className="founder__signature-photo">
-                  <img src="images/Behi-headshot.png" alt="Behi Shafiei" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2Fc1b2746894e54131b1ae91e0d6c8a0f0" alt="Behi Shafiei" />
                 </div>
                 <div>
                   <p className="founder__signature-name">Behi Shafiei</p>
@@ -770,7 +783,6 @@ export default function Home() {
         <div className="container">
           <div className="process__header">
             <p className="eyebrow">What You Get With WealthBridge</p>
-            <h2>The wealth strategies banks hide behind $50M minimums. We&apos;re making them yours.</h2>
           </div>
           <div className="process__layout">
             <div className="process__cards">
@@ -780,7 +792,7 @@ export default function Home() {
               </div>
               <div className="process-card">
                 <h3 className="process-card__title">Your Plan to Keep More Wealth</h3>
-                <p className="process-card__text">A personalized strategy to fix the drains first. Corporate structure, tax optimization, insurance financing — every lever available to stop losing 50 cents on every dollar.</p>
+                <p className="process-card__text">A personalized strategy to fix the drains first. Corporate structure, and tax optimization strategies, and every other lever available to stop losing 50 cents on every dollar.</p>
               </div>
               <div className="process-card">
                 <h3 className="process-card__title">Your Plan to Grow More Wealth</h3>
@@ -820,7 +832,7 @@ export default function Home() {
       <section className="interested section" id="interested">
         <div className="container">
           <div className="interested__header">
-            <h2>Interested?</h2>
+            <h2>Let&apos;s Talk</h2>
           </div>
           <div className="interested__box fade-in">
             <h3 className="interested__box-title">This is for you if...</h3>
@@ -873,18 +885,7 @@ export default function Home() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-item__question">
-                What does insurance have to do with wealth building?
-                <span className="faq-item__icon">+</span>
-              </button>
-              <div className="faq-item__answer">
-                <div className="faq-item__answer-inner">
-                  In Canada, certain types of permanent life insurance — when structured properly — can play a strategic role in long-term wealth planning. For incorporated business owners, corporate-owned permanent insurance may offer a tax-advantaged environment for long-term growth, the ability to position retained earnings to reduce tax friction, and flexibility around liquidity and estate planning. Growth inside the policy is tax-deferred, access to value can be structured through policy loans, and proceeds may flow through the Capital Dividend Account (CDA) for tax-free distributions. At Wealth Bridge, we use insurance selectively — as one layer within a coordinated Wealth Stack, alongside tax strategy, corporate structure, and investments.
-                </div>
-              </div>
-            </div>
-            <div className="faq-item">
-              <button className="faq-item__question">
+              <button className="faq-item__question" content="Yes — when done properly, these strategies are legal and well-established within Canadian tax law. The planning approaches we use are grounded in existing Canadian legislation and CRA-recognized frameworks. They've been used by business owners and families for decades. What matters is how they're implemented: structured correctly, aligned with CRA rules, and coordinated with licensed professional tax and legal advice. We emphasize proper documentation, transparency, and suitability based on your specific situation. Good planning should feel clear, not risky or rushed.">
                 Is this legal? It sounds too good to be true.
                 <span className="faq-item__icon">+</span>
               </button>
@@ -917,7 +918,7 @@ export default function Home() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-item__question">
+              <button className="faq-item__question" content="Trust isn't built on promises. It's built on process. We don't work alone. Our multidisciplinary team brings over 50 years of combined experience—Certified Financial Planners, financial analysts, accountants, and specialists who've seen it all. We're not tied to any bank or provider. We partner with all major Canadian banks and leading insurance companies, which means we recommend what's right for you—not what pays us more. The strategies we discuss aren't theoretical. They're approaches we've implemented, tested, and refined in the real world.  We start with a Keep Rate Audit to see if working together will meaningfully improve your position. If it won't, we'll tell you. That's the difference.">
                 Why should I trust Wealth Bridge with my wealth?
                 <span className="faq-item__icon">+</span>
               </button>
@@ -952,7 +953,7 @@ export default function Home() {
           <div className="footer__inner">
             <div className="footer__brand">
               <div className="footer__logo">
-                <img src="images/wealthbridge-logo-full-vertical.png" alt="WealthBridge" className="footer__logo-img" />
+                <img src="https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2Fb1ad0089dd5444539cbdfb50e72949d9" alt="WealthBridge" className="footer__logo-img" />
               </div>
               <p className="footer__tagline">Raising the Keep Rate for Canadian business owners. The same strategies the ultra-wealthy have used for decades — now accessible to you.</p>
             </div>
