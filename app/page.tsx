@@ -400,7 +400,7 @@ export default function Home() {
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✗</span>
-                    <span className="problem__item-text">RRSP withdrawals taxed at <strong>36-50%</strong> in retirement</span>
+                    <span className="problem__item-text">RRSP withdrawals taxed at <strong>36-53%</strong> in retirement</span>
                   </li>
                 </ul>
               </div>
@@ -410,7 +410,7 @@ export default function Home() {
                 <ul className="problem__list">
                   <li className="problem__item">
                     <span className="problem__item-icon">✓</span>
-                    <span className="problem__item-text">Pay <strong>0-12% taxes</strong> using corporate structures</span>
+                    <span className="problem__item-text">Pay <strong>0-12% taxes</strong></span>
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✓</span>
@@ -418,15 +418,11 @@ export default function Home() {
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✓</span>
-                    <span className="problem__item-text">Retained earnings grow <strong>tax-free</strong> in insurance vehicles</span>
+                    <span className="problem__item-text">Retained earnings grow <strong>tax-free</strong> in tax-efficient vehicles</span>
                   </li>
                   <li className="problem__item">
                     <span className="problem__item-icon">✓</span>
-                    <span className="problem__item-text">Borrow against assets — pay <strong>5% interest</strong> instead of 50% tax</span>
-                  </li>
-                  <li className="problem__item">
-                    <span className="problem__item-icon">✓</span>
-                    <span className="problem__item-text"><strong>Tax-free</strong> retirement income streams</span>
+                    <span className="problem__item-text"><strong>Tax-Efficient</strong> retirement income streams</span>
                   </li>
                 </ul>
               </div>
