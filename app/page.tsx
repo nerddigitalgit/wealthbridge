@@ -918,7 +918,7 @@ export default function Home() {
               </div>
             </div>
             <div className="faq-item">
-              <button className="faq-item__question">
+              <button className="faq-item__question" content="Trust isn't built on promises. It's built on process. We don't work alone. Our multidisciplinary team brings over 50 years of combined experience—Certified Financial Planners, financial analysts, accountants, and specialists who've seen it all. We're not tied to any bank or provider. We partner with all major Canadian banks and leading insurance companies, which means we recommend what's right for you—not what pays us more. The strategies we discuss aren't theoretical. They're approaches we've implemented, tested, and refined in the real world.  We start with a Keep Rate Audit to see if working together will meaningfully improve your position. If it won't, we'll tell you. That's the difference.">
                 Why should I trust Wealth Bridge with my wealth?
                 <span className="faq-item__icon">+</span>
               </button>
