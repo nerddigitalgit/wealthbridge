@@ -799,7 +799,7 @@ export default function Home() {
                 <p className="process-card__text">Once you&apos;re keeping more, we put it to work. Investment strategies, compound growth vehicles, and tax-free growth mechanisms that accelerate your path to financial freedom.</p>
               </div>
               <div className="process-card">
-                <h3 className="process-card__title">Your Team to Manage It All — For Life</h3>
+                <h3 className="process-card__title">Your Team to Manage It All&nbsp;</h3>
                 <p className="process-card__text">Accountants, lawyers, insurance advisors, investment managers — all coordinated under one roof. Succession planning, your children&apos;s education, charitable giving, estate planning. One point of contact. We handle everything.</p>
               </div>
             </div>
