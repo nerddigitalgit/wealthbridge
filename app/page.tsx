@@ -702,7 +702,7 @@ export default function Home() {
           <div className="founder__card fade-in">
             <div className="founder__logo-header">
               <div className="founder__logo-line"></div>
-              <img src="images/wealthbridge-icon.png" alt="WealthBridge" className="founder__logo-icon" />
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F6d3a3472ecbc49f3997947bb8287fffa" alt="WealthBridge" className="founder__logo-icon" />
               <div className="founder__logo-line"></div>
             </div>
 
