@@ -298,6 +298,8 @@ export default function Home() {
               <li><a href="#results" className="nav__link">Results</a></li>
               <li><a href="#process" className="nav__link">How It Works</a></li>
               <li><a href="#faq" className="nav__link">FAQ</a></li>
+              <li><a href="/webinar" className="nav__link">Webinar</a></li>
+              <li><a href="/course" className="nav__link">5-Day Course</a></li>
             </ul>
             <div className="nav__actions">
               <a href="https://calendly.com/wealthbridgeto/30min?month=2026-01" className="btn btn--outline nav__cta">Keep More Wealth</a>
