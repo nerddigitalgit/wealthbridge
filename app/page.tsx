@@ -127,6 +127,8 @@ export default function Home() {
         if (isDown) {
           isDown = false
           ;(row as HTMLElement).style.cursor = 'grab'
+          // unset dragging mark
+          (row as HTMLElement).removeAttribute('data-drag')
           momentumID = requestAnimationFrame(applyMomentum)
         }
       })
