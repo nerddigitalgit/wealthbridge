@@ -231,21 +231,36 @@ export default function Home() {
     let rafId = 0
     function handleParallax() {
       const row1 = document.getElementById('carousel-row-1') as HTMLElement
-      if (!row1) return
-      // don't interfere while user is dragging
-      if (row1.getAttribute('data-drag') === 'true') return
+      const row2 = document.getElementById('carousel-row-2') as HTMLElement
 
-      const rect = row1.getBoundingClientRect()
-      const elemTop = rect.top + window.scrollY
-      const start = elemTop - window.innerHeight // when element enters viewport bottom
-      const end = elemTop + rect.height // when element leaves viewport top
-      const progress = (window.scrollY - start) / (end - start)
-      const t = Math.min(Math.max(progress, 0), 1)
+      // Row 1: Scroll right to left as user scrolls down
+      if (row1 && row1.getAttribute('data-drag') !== 'true') {
+        const rect1 = row1.getBoundingClientRect()
+        const elemTop1 = rect1.top + window.scrollY
+        const start1 = elemTop1 - window.innerHeight
+        const end1 = elemTop1 + rect1.height
+        const progress1 = (window.scrollY - start1) / (end1 - start1)
+        const t1 = Math.min(Math.max(progress1, 0), 1)
 
-      // Limit horizontal movement to a fraction of the scrollable width (half, because we cloned cards)
-      const maxScroll = Math.max((row1.scrollWidth / 2) - row1.clientWidth, 0)
-      const target = maxScroll * t
-      row1.scrollLeft = target
+        const maxScroll1 = Math.max((row1.scrollWidth / 2) - row1.clientWidth, 0)
+        const target1 = maxScroll1 * t1
+        row1.scrollLeft = target1
+      }
+
+      // Row 2: Scroll left to right as user scrolls down (opposite direction)
+      if (row2 && row2.getAttribute('data-drag') !== 'true') {
+        const rect2 = row2.getBoundingClientRect()
+        const elemTop2 = rect2.top + window.scrollY
+        const start2 = elemTop2 - window.innerHeight
+        const end2 = elemTop2 + rect2.height
+        const progress2 = (window.scrollY - start2) / (end2 - start2)
+        const t2 = Math.min(Math.max(progress2, 0), 1)
+
+        const maxScroll2 = Math.max((row2.scrollWidth / 2) - row2.clientWidth, 0)
+        // Invert the progress so it scrolls in opposite direction
+        const target2 = maxScroll2 * (1 - t2)
+        row2.scrollLeft = target2
+      }
     }
 
     function onScrollParallax() {
