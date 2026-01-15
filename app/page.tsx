@@ -291,7 +291,7 @@ export default function Home() {
         <div className="container">
           <div className="nav__inner">
             <a href="#" className="nav__logo">
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2Ff7b2d5722c154463a1030bb8f85b5372" alt="WealthBridge" className="nav__logo-img" />
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F2b3278bb4719472a85194a98adefb8f5" alt="WealthBridge" className="nav__logo-img" />
             </a>
             <ul className="nav__links">
               <li><a href="#solution" className="nav__link">Our Approach</a></li>
