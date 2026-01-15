@@ -835,14 +835,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DOTTED CONNECTOR */}
-      <div className="dotted-connector"></div>
-
       {/* HOW IT WORKS */}
       <section className="process section" id="process">
-        <div className="container">
-          <div className="process__header">
+        <div className="container" style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="process__header" style={{ textAlign: 'center' }}>
             <p className="eyebrow">What You Get With WealthBridge</p>
+            <h2 style={{ margin: '0 auto', font: '600 48px/55.2px "Source Serif 4", "Source Serif 4 Fallback"' }}>
+              Your Plan to Keep More Wealth
+            </h2>
+            <div style={{ color: 'rgba(255, 255, 255, 1)', fontSize: '20px', fontWeight: '400', lineHeight: '34px', maxWidth: '650px', margin: '20px auto 40px' }}>
+              <div>
+                A personalized strategy to fix the drains first. Corporate structure, and tax optimization strategies, and every other lever available to stop losing 50 cents on every dollar.
+              </div>
+            </div>
           </div>
           <div className="process__layout">
             <div className="process__cards">
