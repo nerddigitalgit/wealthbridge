@@ -487,10 +487,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <div className="problem__cta">
-            <a href="#" className="btn btn--dark btn--large" data-open-modal="course-modal">Learn How to Keep More Wealth</a>
-          </div>
         </div>
       </section>
 
