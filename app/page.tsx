@@ -490,59 +490,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DOTTED CONNECTOR */}
-      <div className="dotted-connector"></div>
-
-      {/* SOLUTION (The First Step) */}
-      <section className="solution section" id="solution">
-        <div className="container">
-          <div className="solution__header">
-            <p className="eyebrow">The First Step to More Wealth</p>
-            <h2>Stop losing 50 cents on every dollar.</h2>
-            <p className="solution__lead">The ultra-wealthy don&apos;t start by earning more. They start by keeping more. Before you can grow wealth, you have to stop the drains that are bleeding it away.</p>
-          </div>
-          <div className="solution__grid">
-            <div className="solution-card fade-in">
-              <div className="solution-card__step">1</div>
-              <h3 className="solution-card__title">Find the Drains</h3>
-              <p className="solution-card__text">Audit where your money is actually going. Taxes, structure, cash flow, interest — identify every dollar leaving that doesn&apos;t have to.</p>
-            </div>
-            <div className="solution-card fade-in">
-              <div className="solution-card__step">2</div>
-              <h3 className="solution-card__title">Fix Your Structure</h3>
-              <p className="solution-card__text">Incorporation is layer one. There are many layers after. Are you structured for wealth building or just day-to-day operations? Set up the right entities for where you&apos;re going.</p>
-            </div>
-            <div className="solution-card fade-in">
-              <div className="solution-card__step">3</div>
-              <h3 className="solution-card__title">Eliminate Unnecessary Tax</h3>
-              <p className="solution-card__text">Your biggest expense isn&apos;t your mortgage, it&apos;s your taxes. Create tax-efficient vehicle to grow your wealth and reduce your marginal tax rate. </p>
-            </div>
-            <div className="solution-card fade-in">
-              <div className="solution-card__step">4</div>
-              <h3 className="solution-card__title">Activate Retained Earnings</h3>
-              <p className="solution-card__text">Money sitting in your corporation should be working. Position it in tax-exempt vehicles that grow annually — accessible without triggering taxes.</p>
-            </div>
-            <div className="solution-card fade-in">
-              <div className="solution-card__step">5</div>
-              <h3 className="solution-card__title">Create Liquidity</h3>
-              <p className="solution-card__text">The real cost of accessing corporate wealth isn&apos;t the 12-27% corporate tax you&apos;ve already paid. It&apos;s the additional 36-53% personal tax on withdrawal. That&apos;s the problem we&apos;re solving.</p>
-            </div>
-            <div className="solution-card fade-in">
-              <div className="solution-card__step">6</div>
-              <h3 className="solution-card__title">Design Tax-Free Retirement</h3>
-              <p className="solution-card__text">The goal: multiple streams of tax-efficient income in retirement. Design your exit strategy now so you keep what you earned, not only half of it.</p>
-            </div>
-          </div>
-          <div className="solution__cta">
-            <a href="https://calendly.com/wealthbridgeto/30min?month=2026-01" className="btn btn--primary btn--large">Get Your Free Keep Rate Audit</a>
-            <a href="#" className="btn btn--outline btn--large" data-open-modal="course-modal">Take the Free Course</a>
-          </div>
-        </div>
-      </section>
-
-      {/* DOTTED CONNECTOR */}
-      <div className="dotted-connector"></div>
-
       {/* CAROUSEL RESULTS */}
       <section className="results-carousel section" id="results">
         <div className="container">
