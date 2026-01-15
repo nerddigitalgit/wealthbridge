@@ -375,7 +375,6 @@ export default function Home() {
             <p className="hero__subtitle animate animate-delay-2">Your Keep Rate is the share of every dollar you actually keep after tax, fees, and leakage. Most Canadian owners overwork with a low Keep Rate and wonder why freedom never arrives. We raise your Keep Rate by restructuring tax, reallocating retained earnings, cutting cost drag, and fixing withdrawal policy.</p>
             <div className="hero__cta animate animate-delay-3">
               <a href="https://calendly.com/wealthbridgeto/30min?month=2026-01" className="btn btn--primary btn--large">Get Your Free Keep Rate Audit</a>
-              <a href="#" className="btn btn--outline btn--large" data-open-modal="course-modal">Learn How to Keep More Wealth</a>
             </div>
           </div>
         </div>
