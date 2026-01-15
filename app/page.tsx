@@ -230,6 +230,36 @@ export default function Home() {
     // Re-center on resize
     window.addEventListener('resize', initCarousel)
 
+    // Parallax horizontal scroll synced to vertical scroll
+    let rafId = 0
+    function handleParallax() {
+      const row1 = document.getElementById('carousel-row-1') as HTMLElement
+      if (!row1) return
+      // don't interfere while user is dragging
+      if (row1.getAttribute('data-drag') === 'true') return
+
+      const rect = row1.getBoundingClientRect()
+      const elemTop = rect.top + window.scrollY
+      const start = elemTop - window.innerHeight // when element enters viewport bottom
+      const end = elemTop + rect.height // when element leaves viewport top
+      const progress = (window.scrollY - start) / (end - start)
+      const t = Math.min(Math.max(progress, 0), 1)
+
+      // Limit horizontal movement to a fraction of the scrollable width (half, because we cloned cards)
+      const maxScroll = Math.max((row1.scrollWidth / 2) - row1.clientWidth, 0)
+      const target = maxScroll * t
+      row1.scrollLeft = target
+    }
+
+    function onScrollParallax() {
+      if (rafId) cancelAnimationFrame(rafId)
+      rafId = requestAnimationFrame(handleParallax)
+    }
+
+    window.addEventListener('scroll', onScrollParallax, { passive: true })
+    // run once to set initial position
+    handleParallax()
+
     // Modal functionality
     const modalOverlay = document.getElementById('course-modal')
     const modalForm = document.getElementById('course-form') as HTMLFormElement
