@@ -102,7 +102,7 @@ export default function Home() {
         const event = e as MouseEvent
         isDown = true
         // mark dragging so scroll-driven animations pause
-        (row as HTMLElement).setAttribute('data-drag', 'true')
+        ;(row as HTMLElement).setAttribute('data-drag', 'true')
         cancelAnimationFrame(momentumID)
         ;(row as HTMLElement).style.cursor = 'grabbing'
         startX = event.pageX
@@ -166,7 +166,7 @@ export default function Home() {
       row.addEventListener('touchstart', (e) => {
         const event = e as TouchEvent
         // mark dragging so scroll-driven animations pause
-        (row as HTMLElement).setAttribute('data-drag', 'true')
+        ;(row as HTMLElement).setAttribute('data-drag', 'true')
         cancelAnimationFrame(momentumID)
         touchStartX = event.touches[0].pageX
         touchScrollLeft = (row as HTMLElement).scrollLeft
