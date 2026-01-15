@@ -118,7 +118,7 @@ export default function Home() {
           isDown = false
           ;(row as HTMLElement).style.cursor = 'grab'
           // unset dragging mark
-          (row as HTMLElement).removeAttribute('data-drag')
+          ;(row as HTMLElement).removeAttribute('data-drag')
           momentumID = requestAnimationFrame(applyMomentum)
         }
       })
@@ -128,7 +128,7 @@ export default function Home() {
           isDown = false
           ;(row as HTMLElement).style.cursor = 'grab'
           // unset dragging mark
-          (row as HTMLElement).removeAttribute('data-drag')
+          ;(row as HTMLElement).removeAttribute('data-drag')
           momentumID = requestAnimationFrame(applyMomentum)
         }
       })
@@ -177,7 +177,7 @@ export default function Home() {
 
       row.addEventListener('touchend', () => {
         // unset dragging mark
-        (row as HTMLElement).removeAttribute('data-drag')
+        ;(row as HTMLElement).removeAttribute('data-drag')
         momentumID = requestAnimationFrame(applyMomentum)
       })
 
