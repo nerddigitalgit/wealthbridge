@@ -101,6 +101,8 @@ export default function Home() {
       row.addEventListener('mousedown', (e) => {
         const event = e as MouseEvent
         isDown = true
+        // mark dragging so scroll-driven animations pause
+        (row as HTMLElement).setAttribute('data-drag', 'true')
         cancelAnimationFrame(momentumID)
         ;(row as HTMLElement).style.cursor = 'grabbing'
         startX = event.pageX
