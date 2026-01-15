@@ -1025,6 +1025,7 @@ h3 { font-size: clamp(22px, 2.5vw, 28px); }
 .process {
   background: #A68051;
   color: var(--white);
+  padding: 80px 0 120px;
 }
 
 .process__header {
