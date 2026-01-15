@@ -805,18 +805,12 @@ export default function Home() {
             </div>
             <div className="process__circles">
               <div className="circles-wrapper">
-                <div className="circle circle--outer">
-                  <span className="circle__label">Full Network</span>
-                  <span className="circle__sublabel">Lawyers. Accountants. Specialists.</span>
-                </div>
-                <div className="circle circle--middle">
-                  <span className="circle__label">Your Wealth Plan</span>
-                  <span className="circle__sublabel">Tax. Insurance. Investments.</span>
-                </div>
-                <div className="circle circle--inner">
-                  <span className="circle__label">You</span>
-                  <span className="circle__sublabel">One Point of Contact</span>
-                </div>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F3eb5f3de3d3646d6ba8816b6fb8589aa?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F3eb5f3de3d3646d6ba8816b6fb8589aa?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F3eb5f3de3d3646d6ba8816b6fb8589aa?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F3eb5f3de3d3646d6ba8816b6fb8589aa?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F3eb5f3de3d3646d6ba8816b6fb8589aa?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F3eb5f3de3d3646d6ba8816b6fb8589aa?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F3eb5f3de3d3646d6ba8816b6fb8589aa?width=2000 2000w"
+                  style={{ aspectRatio: '1', objectFit: 'cover', objectPosition: 'center', width: '100%', marginTop: '20px', minHeight: '20px', minWidth: '20px', overflow: 'hidden' }}
+                  alt="Network diagram"
+                />
               </div>
             </div>
           </div>
