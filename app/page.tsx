@@ -202,9 +202,6 @@ export default function Home() {
         touchLastTime = now
       }, { passive: true })
 
-      row.addEventListener('touchend', () => {
-        momentumID = requestAnimationFrame(applyMomentum)
-      })
     })
 
     // Set initial scroll positions
