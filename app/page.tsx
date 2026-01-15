@@ -322,6 +322,10 @@ export default function Home() {
     return () => {
       window.removeEventListener('scroll', handleScroll)
       window.removeEventListener('resize', initCarousel)
+      // cleanup parallax
+      try { window.removeEventListener('scroll', onScrollParallax) } catch (e) {}
+      try { cancelAnimationFrame(rafId) } catch (e) {}
+      try { observer.disconnect() } catch (e) {}
     }
   }, [])
 
