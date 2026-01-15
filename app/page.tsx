@@ -165,6 +165,8 @@ export default function Home() {
 
       row.addEventListener('touchstart', (e) => {
         const event = e as TouchEvent
+        // mark dragging so scroll-driven animations pause
+        (row as HTMLElement).setAttribute('data-drag', 'true')
         cancelAnimationFrame(momentumID)
         touchStartX = event.touches[0].pageX
         touchScrollLeft = (row as HTMLElement).scrollLeft
@@ -172,6 +174,12 @@ export default function Home() {
         touchLastTime = Date.now()
         velX = 0
       }, { passive: true })
+
+      row.addEventListener('touchend', () => {
+        // unset dragging mark
+        (row as HTMLElement).removeAttribute('data-drag')
+        momentumID = requestAnimationFrame(applyMomentum)
+      })
 
       row.addEventListener('touchmove', (e) => {
         const event = e as TouchEvent
