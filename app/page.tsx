@@ -231,36 +231,21 @@ export default function Home() {
     let rafId = 0
     function handleParallax() {
       const row1 = document.getElementById('carousel-row-1') as HTMLElement
-      const row2 = document.getElementById('carousel-row-2') as HTMLElement
+      if (!row1) return
+      // don't interfere while user is dragging
+      if (row1.getAttribute('data-drag') === 'true') return
 
-      // Row 1: Scroll right to left as user scrolls down
-      if (row1 && row1.getAttribute('data-drag') !== 'true') {
-        const rect1 = row1.getBoundingClientRect()
-        const elemTop1 = rect1.top + window.scrollY
-        const start1 = elemTop1 - window.innerHeight
-        const end1 = elemTop1 + rect1.height
-        const progress1 = (window.scrollY - start1) / (end1 - start1)
-        const t1 = Math.min(Math.max(progress1, 0), 1)
+      const rect = row1.getBoundingClientRect()
+      const elemTop = rect.top + window.scrollY
+      const start = elemTop - window.innerHeight // when element enters viewport bottom
+      const end = elemTop + rect.height // when element leaves viewport top
+      const progress = (window.scrollY - start) / (end - start)
+      const t = Math.min(Math.max(progress, 0), 1)
 
-        const maxScroll1 = Math.max((row1.scrollWidth / 2) - row1.clientWidth, 0)
-        const target1 = maxScroll1 * t1
-        row1.scrollLeft = target1
-      }
-
-      // Row 2: Scroll left to right as user scrolls down (opposite direction)
-      if (row2 && row2.getAttribute('data-drag') !== 'true') {
-        const rect2 = row2.getBoundingClientRect()
-        const elemTop2 = rect2.top + window.scrollY
-        const start2 = elemTop2 - window.innerHeight
-        const end2 = elemTop2 + rect2.height
-        const progress2 = (window.scrollY - start2) / (end2 - start2)
-        const t2 = Math.min(Math.max(progress2, 0), 1)
-
-        const maxScroll2 = Math.max((row2.scrollWidth / 2) - row2.clientWidth, 0)
-        // Invert the progress so it scrolls in opposite direction
-        const target2 = maxScroll2 * (1 - t2)
-        row2.scrollLeft = target2
-      }
+      // Limit horizontal movement to a fraction of the scrollable width (half, because we cloned cards)
+      const maxScroll = Math.max((row1.scrollWidth / 2) - row1.clientWidth, 0)
+      const target = maxScroll * t
+      row1.scrollLeft = target
     }
 
     function onScrollParallax() {
@@ -375,6 +360,7 @@ export default function Home() {
             <p className="hero__subtitle animate animate-delay-2">Your Keep Rate is the share of every dollar you actually keep after tax, fees, and leakage. Most Canadian owners overwork with a low Keep Rate and wonder why freedom never arrives. We raise your Keep Rate by restructuring tax, reallocating retained earnings, cutting cost drag, and fixing withdrawal policy.</p>
             <div className="hero__cta animate animate-delay-3">
               <a href="https://calendly.com/wealthbridgeto/30min?month=2026-01" className="btn btn--primary btn--large">Get Your Free Keep Rate Audit</a>
+              <a href="#" className="btn btn--outline btn--large" data-open-modal="course-modal">Learn How to Keep More Wealth</a>
             </div>
           </div>
         </div>
@@ -487,8 +473,65 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="problem__cta">
+            <a href="#" className="btn btn--dark btn--large" data-open-modal="course-modal">Learn How to Keep More Wealth</a>
+          </div>
         </div>
       </section>
+
+      {/* DOTTED CONNECTOR */}
+      <div className="dotted-connector"></div>
+
+      {/* SOLUTION (The First Step) */}
+      <section className="solution section" id="solution">
+        <div className="container">
+          <div className="solution__header">
+            <p className="eyebrow">The First Step to More Wealth</p>
+            <h2>Stop losing 50 cents on every dollar.</h2>
+            <p className="solution__lead">The ultra-wealthy don&apos;t start by earning more. They start by keeping more. Before you can grow wealth, you have to stop the drains that are bleeding it away.</p>
+          </div>
+          <div className="solution__grid">
+            <div className="solution-card fade-in">
+              <div className="solution-card__step">1</div>
+              <h3 className="solution-card__title">Find the Drains</h3>
+              <p className="solution-card__text">Audit where your money is actually going. Taxes, structure, cash flow, interest — identify every dollar leaving that doesn&apos;t have to.</p>
+            </div>
+            <div className="solution-card fade-in">
+              <div className="solution-card__step">2</div>
+              <h3 className="solution-card__title">Fix Your Structure</h3>
+              <p className="solution-card__text">Incorporation is layer one. There are many layers after. Are you structured for wealth building or just day-to-day operations? Set up the right entities for where you&apos;re going.</p>
+            </div>
+            <div className="solution-card fade-in">
+              <div className="solution-card__step">3</div>
+              <h3 className="solution-card__title">Eliminate Unnecessary Tax</h3>
+              <p className="solution-card__text">Your biggest expense isn&apos;t your mortgage, it&apos;s your taxes. Create tax-efficient vehicle to grow your wealth and reduce your marginal tax rate. </p>
+            </div>
+            <div className="solution-card fade-in">
+              <div className="solution-card__step">4</div>
+              <h3 className="solution-card__title">Activate Retained Earnings</h3>
+              <p className="solution-card__text">Money sitting in your corporation should be working. Position it in tax-exempt vehicles that grow annually — accessible without triggering taxes.</p>
+            </div>
+            <div className="solution-card fade-in">
+              <div className="solution-card__step">5</div>
+              <h3 className="solution-card__title">Create Liquidity</h3>
+              <p className="solution-card__text">The real cost of accessing corporate wealth isn&apos;t the 12-27% corporate tax you&apos;ve already paid. It&apos;s the additional 36-53% personal tax on withdrawal. That&apos;s the problem we&apos;re solving.</p>
+            </div>
+            <div className="solution-card fade-in">
+              <div className="solution-card__step">6</div>
+              <h3 className="solution-card__title">Design Tax-Free Retirement</h3>
+              <p className="solution-card__text">The goal: multiple streams of tax-efficient income in retirement. Design your exit strategy now so you keep what you earned, not only half of it.</p>
+            </div>
+          </div>
+          <div className="solution__cta">
+            <a href="https://calendly.com/wealthbridgeto/30min?month=2026-01" className="btn btn--primary btn--large">Get Your Free Keep Rate Audit</a>
+            <a href="#" className="btn btn--outline btn--large" data-open-modal="course-modal">Take the Free Course</a>
+          </div>
+        </div>
+      </section>
+
+      {/* DOTTED CONNECTOR */}
+      <div className="dotted-connector"></div>
 
       {/* CAROUSEL RESULTS */}
       <section className="results-carousel section" id="results">
@@ -777,19 +820,14 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DOTTED CONNECTOR */}
+      <div className="dotted-connector"></div>
+
       {/* HOW IT WORKS */}
       <section className="process section" id="process">
-        <div className="container" style={{ display: 'flex', flexDirection: 'column' }}>
-          <div className="process__header" style={{ textAlign: 'center' }}>
+        <div className="container">
+          <div className="process__header">
             <p className="eyebrow">What You Get With WealthBridge</p>
-            <h2 style={{ margin: '0 auto', font: '600 48px/55.2px "Source Serif 4", "Source Serif 4 Fallback"' }}>
-              Your Plan to Keep More Wealth
-            </h2>
-            <div style={{ color: 'rgba(255, 255, 255, 1)', fontSize: '20px', fontWeight: '400', lineHeight: '34px', maxWidth: '650px', margin: '20px auto 40px' }}>
-              <div>
-                A personalized strategy to fix the drains first. Corporate structure, and tax optimization strategies, and every other lever available to stop losing 50 cents on every dollar.
-              </div>
-            </div>
           </div>
           <div className="process__layout">
             <div className="process__cards">
