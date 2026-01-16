@@ -1,0 +1,27 @@
+{
+  "tagline": "Raising the Keep Rate for Canadian business owners. The same strategies the ultra-wealthy have used for decades - now accessible to you.",
+  "columns": [
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About Behi", "url": "#founder" },
+        { "label": "Our Approach", "url": "#solution" },
+        { "label": "Client Results", "url": "#results" },
+        { "label": "Contact", "url": "https://calendly.com/wealthbridgeto/30min?month=2026-01" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "Keep Rate", "url": "#problem" },
+        { "label": "How It Works", "url": "#process" },
+        { "label": "FAQ", "url": "#faq" },
+        { "label": "Book a Call", "url": "https://calendly.com/wealthbridgeto/30min?month=2026-01" }
+      ]
+    }
+  ],
+  "legal_links": [
+    { "label": "Privacy Policy", "url": "/privacy/" },
+    { "label": "Terms of Service", "url": "/terms/" }
+  ]
+}

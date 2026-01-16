@@ -1,0 +1,249 @@
+{
+  "source": "",
+  "paths": {
+    "data": "_data",
+    "layouts": "_layouts",
+    "includes": "_includes",
+    "static": "assets"
+  },
+  "collections_config": {
+    "pages": {
+      "path": "",
+      "url": "/[slug]/",
+      "output": true,
+      "icon": "wysiwyg",
+      "name": "Pages",
+      "description": "Main website pages",
+      "_enabled_editors": ["visual", "content", "data"],
+      "schemas": {
+        "default": {
+          "path": "_schemas/page.json"
+        }
+      }
+    },
+    "landing_pages": {
+      "path": "landing",
+      "url": "/landing/[slug]/",
+      "output": true,
+      "icon": "rocket_launch",
+      "name": "Landing Pages",
+      "description": "Marketing and conversion landing pages",
+      "_enabled_editors": ["visual", "content", "data"]
+    },
+    "data": {
+      "path": "_data",
+      "output": false,
+      "icon": "settings",
+      "name": "Site Data",
+      "description": "Global site configuration and content"
+    }
+  },
+  "data_config": {
+    "site": {
+      "path": "_data/site.json"
+    },
+    "navigation": {
+      "path": "_data/navigation.json"
+    },
+    "footer": {
+      "path": "_data/footer.json"
+    },
+    "testimonials": {
+      "path": "_data/testimonials.json"
+    },
+    "faq": {
+      "path": "_data/faq.json"
+    },
+    "results": {
+      "path": "_data/results.json"
+    },
+    "free_course": {
+      "path": "_data/free_course.json"
+    },
+    "book_audit": {
+      "path": "_data/book_audit.json"
+    },
+    "course_confirm": {
+      "path": "_data/course_confirm.json"
+    }
+  },
+  "_inputs": {
+    "title": {
+      "type": "text",
+      "label": "Page Title"
+    },
+    "description": {
+      "type": "textarea",
+      "label": "Meta Description"
+    },
+    "hero_eyebrow": {
+      "type": "text",
+      "label": "Eyebrow Text"
+    },
+    "hero_title": {
+      "type": "text",
+      "label": "Hero Title"
+    },
+    "hero_title_highlight": {
+      "type": "text",
+      "label": "Highlighted Word"
+    },
+    "hero_subtitle": {
+      "type": "textarea",
+      "label": "Hero Subtitle"
+    },
+    "cta_text": {
+      "type": "text",
+      "label": "Button Text"
+    },
+    "cta_url": {
+      "type": "url",
+      "label": "Button URL"
+    },
+    "image": {
+      "type": "image",
+      "label": "Image"
+    },
+    "content": {
+      "type": "markdown",
+      "label": "Content"
+    },
+    "quote": {
+      "type": "textarea",
+      "label": "Quote Text"
+    },
+    "name": {
+      "type": "text"
+    },
+    "role": {
+      "type": "text"
+    },
+    "headline": {
+      "type": "text"
+    },
+    "metric_before": {
+      "type": "text",
+      "label": "Before Value"
+    },
+    "metric_after": {
+      "type": "text",
+      "label": "After Value"
+    },
+    "question": {
+      "type": "text",
+      "label": "Question"
+    },
+    "answer": {
+      "type": "markdown",
+      "label": "Answer"
+    },
+    "badge": {
+      "type": "text",
+      "label": "Badge Text"
+    },
+    "eyebrow": {
+      "type": "text",
+      "label": "Eyebrow Text"
+    },
+    "subtitle": {
+      "type": "textarea",
+      "label": "Subtitle"
+    },
+    "button": {
+      "type": "text",
+      "label": "Button Text"
+    },
+    "note": {
+      "type": "text",
+      "label": "Note Text"
+    },
+    "webhook_url": {
+      "type": "url",
+      "label": "Webhook URL"
+    },
+    "redirect_url": {
+      "type": "text",
+      "label": "Redirect URL"
+    },
+    "embed_code": {
+      "type": "code",
+      "label": "Embed Code"
+    },
+    "bio": {
+      "type": "markdown",
+      "label": "Biography"
+    },
+    "credentials": {
+      "type": "text",
+      "label": "Credentials"
+    },
+    "photo": {
+      "type": "image",
+      "label": "Photo"
+    },
+    "avatar": {
+      "type": "image",
+      "label": "Avatar"
+    },
+    "takeaway": {
+      "type": "text",
+      "label": "Key Takeaway"
+    },
+    "result": {
+      "type": "text",
+      "label": "Result Badge"
+    },
+    "value": {
+      "type": "text",
+      "label": "Stat Value"
+    },
+    "label": {
+      "type": "text",
+      "label": "Stat Label"
+    },
+    "bold_text": {
+      "type": "text",
+      "label": "Bold Text"
+    }
+  },
+  "_structures": {
+    "process_cards": {
+      "values": {
+        "value": {
+          "title": "",
+          "description": ""
+        }
+      }
+    },
+    "interested_items": {
+      "values": {
+        "value": {
+          "text": ""
+        }
+      }
+    },
+    "problem_items": {
+      "values": {
+        "value": {
+          "text": "",
+          "is_positive": false
+        }
+      }
+    }
+  },
+  "_editables": {
+    "text": {
+      "italic": true,
+      "bold": true,
+      "link": true
+    },
+    "block": {
+      "format": "p h2 h3",
+      "italic": true,
+      "bold": true,
+      "link": true,
+      "bulletedlist": true,
+      "numberedlist": true
+    }
+  }
+}

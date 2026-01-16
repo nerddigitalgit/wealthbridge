@@ -1,0 +1,109 @@
+{
+  "hero": {
+    "badge": "FREE 30-MINUTE AUDIT",
+    "title": "Discover Your Keep Rate",
+    "subtitle": "Find out exactly where your wealth is quietly leaking - and get a personalized plan to keep more of every dollar you earn.",
+    "features": [
+      {
+        "bold_text": "30-minute call",
+        "description": "Quick, focused analysis of your financial structure"
+      },
+      {
+        "bold_text": "No obligation",
+        "description": "If we can't help, we'll tell you honestly"
+      },
+      {
+        "bold_text": "Actionable insights",
+        "description": "Walk away with clarity on your next steps"
+      }
+    ]
+  },
+  "booking": {
+    "title": "Book Your Free Audit",
+    "subtitle": "Select a time that works for you",
+    "embed_code": ""
+  },
+  "benefits": {
+    "eyebrow": "What You'll Discover",
+    "title": "Your Personalized Keep Rate Analysis",
+    "cards": [
+      {
+        "title": "Your Current Keep Rate",
+        "text": "We'll calculate exactly what percentage of your income you're actually keeping after taxes, fees, and wealth drains."
+      },
+      {
+        "title": "Hidden Wealth Drains",
+        "text": "Identify the specific areas where your money is quietly leaking - often in places you've never considered."
+      },
+      {
+        "title": "Your Optimization Path",
+        "text": "Get a clear roadmap of strategies that could help you keep more of what you earn - tailored to your situation."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client Results",
+    "title": "What Our Clients Say",
+    "items": [
+      {
+        "result": "$85K saved annually",
+        "quote": "The audit revealed I was paying way more than I needed to. Within 3 months, we had restructured everything and I'm keeping $85K more per year.",
+        "name": "James Morrison",
+        "role": "Contractor, $350K Revenue",
+        "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "result": "$3.2M lifetime savings",
+        "quote": "I'd been with the same accountant for 12 years. WealthBridge found opportunities no one had ever mentioned. The projected savings over my career are incredible.",
+        "name": "Patricia Lee",
+        "role": "Lawyer, Partner",
+        "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "result": "50% to 12% tax rate",
+        "quote": "I went from paying 50% in taxes to 12%. Same income, completely different outcome. I wish I'd known about this years ago.",
+        "name": "Robert Kim",
+        "role": "Consultant, $250K Income",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+      }
+    ]
+  },
+  "audience": {
+    "eyebrow": "Is This Right For You?",
+    "title": "The Audit Is Perfect For You If...",
+    "box_title": "You're a Canadian business owner who:",
+    "items": [
+      { "text": "Has an <strong>incorporated business</strong>" },
+      { "text": "Earns <strong>$200K+ annually</strong>" },
+      { "text": "Has <strong>retained earnings</strong> in your corp" },
+      { "text": "Feels you should be <strong>further ahead</strong>" },
+      { "text": "Wants to <strong>build generational wealth</strong>" },
+      { "text": "Is ready to <strong>take action</strong>" }
+    ]
+  },
+  "process": {
+    "eyebrow": "How It Works",
+    "title": "Your Path to a Higher Keep Rate",
+    "steps": [
+      {
+        "title": "Book Your Call",
+        "text": "Select a 30-minute slot that works for you. We'll send you a brief questionnaire to prepare."
+      },
+      {
+        "title": "Discovery Call",
+        "text": "We'll analyze your current structure, identify wealth drains, and calculate your Keep Rate."
+      },
+      {
+        "title": "Get Your Roadmap",
+        "text": "Walk away with clear next steps - whether that's working with us or implementing changes on your own."
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Take the First Step",
+    "title": "What's Your Keep Rate?",
+    "subtitle": "Find out exactly where your wealth is going - and get a plan to keep more of it.",
+    "button": "Get Your Free Keep Rate Audit",
+    "note": "Takes 30 minutes. No obligation. If we can't help, we'll tell you."
+  }
+}

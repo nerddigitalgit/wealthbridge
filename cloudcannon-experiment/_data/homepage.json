@@ -1,0 +1,128 @@
+{
+  "hero": {
+    "eyebrow": "For Canadian Business Owners",
+    "title": "The wealthy don't just earn more. They",
+    "title_highlight": "keep",
+    "title_end": "more.",
+    "subtitle": "Your Keep Rate is the share of every dollar you actually keep after tax, fees, and leakage. Most Canadian owners overwork with a low Keep Rate and wonder why freedom never arrives. We raise your Keep Rate by restructuring tax, reallocating retained earnings, cutting cost drag, and fixing withdrawal policy.",
+    "cta_primary": {
+      "text": "Get Your Free Keep Rate Audit",
+      "url": "https://calendly.com/wealthbridgeto/30min?month=2026-01"
+    }
+  },
+  "problem": {
+    "eyebrow": "The Problem",
+    "title": "You have a low Keep Rate.",
+    "definition": {
+      "term": "Keep Rate:",
+      "text": "The percentage of your income you actually keep after taxes, interest, and wealth drains. It's the single number that determines whether you build generational wealth - or work your whole life with little to show for it."
+    },
+    "comparison": {
+      "left": {
+        "title": "Everyone Else",
+        "badge": "~50% Keep Rate",
+        "items": [
+          { "text": "Pay <strong>36-53% personal tax</strong> before you can invest" },
+          { "text": "Wrong legal structure, taxed at personal rates" },
+          { "text": "Corporate cash sits idle, taxed as passive income" },
+          { "text": "Withdraw dividends, trigger <strong>tax events</strong>" },
+          { "text": "RRSP withdrawals taxed at <strong>36-53%</strong> in retirement" }
+        ]
+      },
+      "right": {
+        "title": "The Ultra-Wealthy",
+        "badge": "85%+ Keep Rate",
+        "items": [
+          { "text": "Pay <strong>0-12% taxes</strong>" },
+          { "text": "Structured for <strong>wealth building</strong>, not just operations" },
+          { "text": "Retained earnings grow <strong>tax-free</strong> in tax-efficient vehicles" },
+          { "text": "<strong>Tax-Efficient</strong> retirement income streams" }
+        ]
+      }
+    }
+  },
+  "founder": {
+    "greeting": "Hi there,",
+    "paragraphs": [
+      "I left my job as an Ontario Treasury Board Analyst to build something of my own. My first year in business, I earned just over $200,000. It felt like success, until tax season, when a huge portion disappeared.",
+      "My business counterpart, same market, earned seven figures and kept most of it. The difference wasn't effort. It was structure.",
+      "I was too \"small\" for private wealth firms. Too complex for bank advice. No one explained how tax, incorporation, and planning work together. So, I learned the hard way, and made expensive mistakes along the way.",
+      "But those mistakes taught me something: wealth isn't just built by earning more. It's built by keeping more.",
+      "As a first-generation Iranian Canadian immigrant, I'd already spent my life navigating systems that weren't designed for people like me. I knew what it felt like to be overlooked or pushed into cookie-cutter solutions.",
+      "And I saw it happening everywhere - to women entrepreneurs, visible minorities, and other immigrants.",
+      "That's why I founded Wealth Bridge Consulting.",
+      "We close the wealth gap between what you earn and what you keep, by designing smarter structures without the guesswork. We shift the decision power back to you, where it belongs.",
+      "If you've built a successful business but feel like wealth should be easier, you're not behind. You're ready for a better framework.",
+      "We offer a complimentary Keep Rate Audit to show you where wealth may be quietly leaking. No pressure. Just clarity.",
+      "Your success isn't a transaction. It's a transformation."
+    ],
+    "signature": {
+      "name": "Behi Shafiei",
+      "title": "Founder & CEO, WealthBridge Consulting",
+      "photo": "https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2Fc1b2746894e54131b1ae91e0d6c8a0f0"
+    }
+  },
+  "process": {
+    "eyebrow": "What You Get With WealthBridge",
+    "title": "Your Plan to Keep More Wealth",
+    "subtitle": "A personalized strategy to fix the drains first. Corporate structure, and tax optimization strategies, and every other lever available to stop losing 50 cents on every dollar.",
+    "image": "https://cdn.builder.io/api/v1/image/assets%2F44e3e188e75945c7957b904ccda3f1ae%2F3eb5f3de3d3646d6ba8816b6fb8589aa",
+    "cards": [
+      {
+        "title": "Your Free Keep Rate Audit",
+        "text": "A comprehensive analysis of where your money is going. We identify every drain - taxes, structure, cash flow, interest - and show you exactly how much you're losing annually."
+      },
+      {
+        "title": "Your Plan to Keep More Wealth",
+        "text": "A personalized strategy to fix the drains first. Corporate structure, and tax optimization strategies, and every other lever available to stop losing 50 cents on every dollar."
+      },
+      {
+        "title": "Your Plan to Grow More Wealth",
+        "text": "Once you're keeping more, we put it to work. Investment strategies, compound growth vehicles, and tax-free growth mechanisms that accelerate your path to financial freedom."
+      },
+      {
+        "title": "Your Team to Manage It All",
+        "text": "Accountants, lawyers, insurance advisors, investment managers - all coordinated under one roof. Succession planning, your children's education, charitable giving, estate planning. One point of contact. We handle everything."
+      }
+    ],
+    "cta_text": "Want to learn more?",
+    "cta_primary": {
+      "text": "Get Your Free Keep Rate Audit",
+      "url": "https://calendly.com/wealthbridgeto/30min?month=2026-01"
+    },
+    "cta_secondary": {
+      "text": "Or learn how to keep more wealth",
+      "url": "#"
+    }
+  },
+  "interested": {
+    "title": "Let's Talk",
+    "box_title": "This is for you if...",
+    "items": [
+      "You believe (like us) that <strong>business owners are the foundation of Canada's economy</strong>",
+      "You believe the ultra-wealthy <strong>shouldn't be the only ones who get to build generational wealth</strong>",
+      "You're a Canadian business owner with an <strong>incorporated business</strong>",
+      "You make <strong>more than you need to live on</strong> and have retained earnings sitting in your corporation",
+      "You're ready to <strong>stop accepting \"that's just how taxes work\"</strong> as an answer"
+    ],
+    "cta": {
+      "text": "Get Your Free Keep Rate Audit",
+      "url": "https://calendly.com/wealthbridgeto/30min?month=2026-01"
+    }
+  },
+  "cta": {
+    "eyebrow": "Take the First Step",
+    "title": "What's your Keep Rate?",
+    "subtitle": "Find out how much money you're losing every year - and get a free plan to keep more of it.",
+    "button_text": "Get Your Free Keep Rate Audit",
+    "button_url": "https://calendly.com/wealthbridgeto/30min?month=2026-01",
+    "note": "Takes 30 minutes. No obligation. If we can't help, we'll tell you."
+  },
+  "modal": {
+    "title": "Get the Free 5-Day Course",
+    "description": "Learn the exact strategies the ultra-wealthy use to keep more of every dollar they earn. We'll send you one actionable lesson per day for 5 days.",
+    "button_text": "Send Me the Course",
+    "success_title": "You're In!",
+    "success_text": "Check your email - we've just sent you a confirmation with information on the free course. Your first lesson is on its way!"
+  }
+}

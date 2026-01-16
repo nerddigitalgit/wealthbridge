@@ -1,0 +1,99 @@
+{
+  "section_eyebrow": "Client Results",
+  "section_title": "What a higher Keep Rate looks like",
+  "section_subtitle": "Real results from Canadian business owners. Swipe to see more.",
+  "row_1": [
+    {
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face",
+      "type": "Lawyer • 12 Years",
+      "headline": "$3.2M saved over career",
+      "text": "Partner at a major firm. RBC wealth client. Nobody asked: \"Why aren't you incorporated?\"",
+      "metric_before_label": "Before",
+      "metric_before_value": "50% taxes",
+      "metric_after_label": "After",
+      "metric_after_value": "12% taxes"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&crop=face",
+      "type": "Solopreneur • $150K",
+      "headline": "$40K saved year one",
+      "text": "Making $150K but only needed $30K to live. Was paying 50% tax on the full amount.",
+      "metric_before_label": "Before",
+      "metric_before_value": "Sole Prop",
+      "metric_after_label": "After",
+      "metric_after_value": "Inc'd"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face",
+      "type": "Dentist • Practice Owner",
+      "headline": "$1.8M additional retirement",
+      "text": "Thought his accountant had everything covered. We found $180K/yr in missed savings.",
+      "metric_before_label": "Before",
+      "metric_before_value": "$4.2M",
+      "metric_after_label": "After",
+      "metric_after_value": "$6M"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=200&h=200&fit=crop&crop=face",
+      "type": "Consultant • $250K",
+      "headline": "$55K saved annually",
+      "text": "High income, no structure. Now keeps $55K more every year with proper planning.",
+      "metric_before_label": "Before",
+      "metric_before_value": "45% rate",
+      "metric_after_label": "After",
+      "metric_after_value": "22% rate"
+    }
+  ],
+  "row_2": [
+    {
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+      "type": "Executive • $1M+ Income",
+      "headline": "$44M net worth projection",
+      "text": "Making $1M/year with only $2.3M net worth. His pension wasn't invested.",
+      "metric_before_label": "Current",
+      "metric_before_value": "$2.3M",
+      "metric_after_label": "Projected",
+      "metric_after_value": "$44M"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=200&h=200&fit=crop&crop=face",
+      "type": "Realtor • $400K Revenue",
+      "headline": "$120K kept vs lost",
+      "text": "From paying 50% on $120K to keeping it all. Same income, different result.",
+      "metric_before_label": "Before",
+      "metric_before_value": "$60K kept",
+      "metric_after_label": "After",
+      "metric_after_value": "$120K kept"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop&crop=face",
+      "type": "Tech Founder • $500K",
+      "headline": "$2.1M preserved on exit",
+      "text": "Set up family trust before exit. Saved $2.1M in capital gains tax.",
+      "metric_before_label": "Without",
+      "metric_before_value": "$5.9M",
+      "metric_after_label": "With",
+      "metric_after_value": "$8M"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=200&h=200&fit=crop&crop=face",
+      "type": "Therapist • $180K",
+      "headline": "$32K saved year one",
+      "text": "Professional corp + proper structure = $32K more in her pocket annually.",
+      "metric_before_label": "Before",
+      "metric_before_value": "$90K kept",
+      "metric_after_label": "After",
+      "metric_after_value": "$122K kept"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
+      "type": "Contractor • $350K",
+      "headline": "$85K tax reduction",
+      "text": "From writing cheques to CRA to keeping that money in his family.",
+      "metric_before_label": "Before",
+      "metric_before_value": "$140K tax",
+      "metric_after_label": "After",
+      "metric_after_value": "$55K tax"
+    }
+  ]
+}

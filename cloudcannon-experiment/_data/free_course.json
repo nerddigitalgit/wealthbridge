@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "badge": "FREE 5-DAY COURSE",
+    "title": "The Keep Rate Blueprint",
+    "subtitle": "Learn the exact strategies the ultra-wealthy use to keep more of every dollar they earn. One actionable lesson per day, delivered to your inbox.",
+    "benefits": [
+      { "text": "Understand why high earners stay stuck" },
+      { "text": "Learn the Keep Rate framework" },
+      { "text": "Discover tax-efficient wealth strategies" },
+      { "text": "Get actionable steps you can implement" }
+    ]
+  },
+  "form": {
+    "title": "Start Your Free Course",
+    "subtitle": "Join 500+ Canadian business owners",
+    "button": "Send Me the Course",
+    "note": "No spam. Unsubscribe anytime.",
+    "webhook_url": "",
+    "redirect_url": "course-confirm.html"
+  },
+  "book_image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=500&fit=crop",
+  "curriculum": {
+    "eyebrow": "What You'll Learn",
+    "title": "5 Days to Understanding Your Keep Rate",
+    "days": [
+      {
+        "title": "The Hidden Tax on Success",
+        "text": "Discover why earning more doesn't automatically mean keeping more, and the fundamental mindset shift that separates wealth builders from high earners.",
+        "takeaway": "Calculate your current Keep Rate using our simple formula"
+      },
+      {
+        "title": "The Structure Advantage",
+        "text": "Learn how the ultra-wealthy use corporate structures to legally minimize taxes and maximize wealth retention - strategies available to any incorporated business owner.",
+        "takeaway": "Identify if your current structure is costing you money"
+      },
+      {
+        "title": "The Wealth Drains",
+        "text": "Uncover the 5 most common places where business owners unknowingly lose wealth - and the questions to ask your accountant today.",
+        "takeaway": "A checklist of wealth drains to audit in your own finances"
+      },
+      {
+        "title": "Tax-Efficient Wealth Vehicles",
+        "text": "Explore the investment and insurance strategies that let your money compound tax-free or tax-deferred - the same tools used by Canada's wealthiest families.",
+        "takeaway": "Overview of vehicles that may apply to your situation"
+      },
+      {
+        "title": "Building Your Wealth Plan",
+        "text": "Put it all together with a framework for evaluating your complete financial picture and determining your next steps toward a higher Keep Rate.",
+        "takeaway": "Your personal action plan for raising your Keep Rate"
+      }
+    ]
+  },
+  "founder": {
+    "eyebrow": "Your Instructor",
+    "title": "Meet Behi Shafiei",
+    "name": "Behi Shafiei",
+    "credentials": "Founder, WealthBridge Consulting | Former Ontario Treasury Board Analyst",
+    "bio": "<p>After leaving my role as an Ontario Treasury Board Analyst to build a business, I quickly learned that earning more doesn't mean keeping more. In my first year as a realtor, a large portion of my $200K+ income disappeared to taxes.</p><p>I spent years learning how the ultra-wealthy structure their finances - incorporation strategies, tax planning, and capital positioning. Now I help Canadian business owners apply these same principles to raise their Keep Rate and build real, lasting wealth.</p>",
+    "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&crop=face",
+    "stats": [
+      { "value": "500+", "label": "Business Owners Helped" },
+      { "value": "$12M+", "label": "Tax Savings Identified" },
+      { "value": "15+", "label": "Years Experience" }
+    ]
+  },
+  "audience": {
+    "eyebrow": "Who This Is For",
+    "title": "Built for Canadian Business Owners",
+    "cards": [
+      {
+        "title": "Incorporated Business Owners",
+        "text": "You have a corporation but aren't sure if you're using it optimally for wealth building."
+      },
+      {
+        "title": "High Earners",
+        "text": "You make more than you need to live on but feel like you're not getting ahead fast enough."
+      },
+      {
+        "title": "Time-Strapped Professionals",
+        "text": "You don't have hours to research tax strategies but want to understand the fundamentals."
+      }
+    ]
+  },
+  "proof": {
+    "eyebrow": "What People Are Saying",
+    "title": "Course Reviews",
+    "testimonials": [
+      {
+        "quote": "Finally, someone explained this in a way that made sense. I had no idea my structure was costing me so much.",
+        "name": "Michael Chen",
+        "role": "IT Consultant, Toronto",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "quote": "The day 3 lesson about wealth drains was eye-opening. I immediately scheduled a meeting with my accountant.",
+        "name": "Sarah Williams",
+        "role": "Real Estate Agent, Vancouver",
+        "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "quote": "Short, practical, and actually useful. This course should be required reading for every Canadian business owner.",
+        "name": "David Patel",
+        "role": "Dentist, Calgary",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Start Your Journey",
+    "title": "Ready to Raise Your Keep Rate?",
+    "subtitle": "Join 500+ Canadian business owners who've taken the first step toward keeping more of what they earn.",
+    "button": "Send Me the Free Course"
+  }
+}
